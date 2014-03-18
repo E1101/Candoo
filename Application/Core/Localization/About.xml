@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<!-- this is human readable name of module -->
+	<name>Localization</name>
+	<description><![CDATA[Localization functionality of application]]></description>
+	<thumbnail></thumbnail>
+	<author>Core Team</author>
+	<email></email>
+	<version>1.0.0</version>
+	<license>free</license>
+	
+	<!-- changable config of module -->
+	<params>
+		<!-- dar hengaame generate kardan e form list ro az maghaadir e bargardaande shode az scope migirad -->
+		<param type="select" name="lang_default" label="Base language" description="Application Base language" scope="Localization_Lib_Language::getLangs">
+			<!-- default value -->
+			<value>en</value>
+		</param>
+		
+		<param type="select" name="lang_restricted" label="Site restricted language" description="Your restricted default site language, disable language url detection" scope="Localization_Lib_Language::getLangs"  >
+			<!-- default value -->
+			<value></value>
+		</param>
+		
+		<!-- separate fields -->
+		<param type="spacer" />
+		
+		<param type="select" name="datetime_timezone" label="Time Zone" description="" scope="Localization_Lib_Datetime::getTimezones">
+			<!-- default value -->
+			<value>Asia/Tehran</value>
+		</param>
+		
+		<param type="select" name="datetime_format" label="Date time format" description="" scope="Localization_Lib_Datetime::getFormats">
+			<!-- default value -->
+			<value>Y-m-d H:i:s</value>
+		</param>
+		
+	</params>
+	
+</module>

@@ -1,0 +1,10 @@
+<h1>moduleTest : template side</h1>
+
+<p><b>Current Language :</b> <?php echo $this->translate('Ask a question');?> </p>
+<hr/>
+<?php echo 'from:'. __FILE__; ?>
+
+<h3>inline Widget moduleTest</h3>
+<?php 
+	echo $this->widget('test','moduleTest')->display();
+?>

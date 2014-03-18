@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<name>Html</name>
+	<title>HTML content</title>
+	<module>core</module>
+	<description>Show HTML content</description>
+	<thumbnail></thumbnail>
+	<author></author>
+	<version>1.0.0</version>
+	<license>free</license>
+	<params>
+		<param name="content">
+			<description>HTML content</description>
+		</param>
+		<param name="file">
+			<description>File that is used to rendered</description>
+		</param>
+	</params>	
+</widget>

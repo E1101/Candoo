@@ -1,0 +1,12 @@
+<form action="<?php echo  $this->escape($this->element->getAction()); ?>"
+      method="<?php echo  $this->escape($this->element->getMethod()); ?>"
+      enctype="<?php echo  $this->escape($this->element->getEnctype()); ?>"
+      > 
+   <fieldset>
+     <div class="form-wrap-1" >
+    	<?php foreach ($this->element->getElements() as $element){?>
+       		<?php echo $element;?>
+    	<?php }?>
+    </div> 
+   </fieldset>
+</form>

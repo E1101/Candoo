@@ -1,0 +1,1913 @@
+@import url(../../../fonts.googleapis.com/css~family=Droid+Sans.css);
+@import url(../../../fonts.googleapis.com/css~family=Oswald.css);
+@import url(../../../fonts.googleapis.com/css~family=PT+Sans+Narrow_700.css);
+@import url(../../../fonts.googleapis.com/css~family=Open+Sans_600.css);
+
+/* theme settings */
+.theme_settings_wrapper{
+	position:fixed; left:0; top:201px;
+	display:block;}
+.theme_settings_wrapper #show_settings_button{
+	width:30px; height:32px; left:0; top:21px; position:absolute;
+	background:url(images/settings/show_settings.png) no-repeat 0 0;}
+.theme_settings_wrapper #hide_settings_button{
+	width:29px; height:31px; right:-26px; top:21px; position:absolute;
+	background:url(images/settings/close_settings.png) no-repeat 0 0;}
+.theme_settings_container{width:140px; position:absolute;background:url(images/settings/rep_settings.png) repeat-y 0 0; min-height:81px; padding:6px 21px 12px 16px;}
+.theme_settings_container .theme_settings_container_top{position:absolute;width:100%; height:8px; background:url(images/settings/top_settings.png) no-repeat 0 0; left:0;top:-8px;}
+.theme_settings_container .theme_settings_container_bott{position:absolute;width:100%; height:8px; background:url(images/settings/bott_settings.png) no-repeat 0 0; left:0;bottom:-8px;}
+.theme_settings_container a{color:#0a71a0; font-size:11px;}
+.theme_settings_container a:hover{color:#768b94;}
+
+.theme_settings_container h3{color:#888888 !important; font:bold 11px/15px Arial; margin:0 0 7px 0;}
+.theme_settings_container select{height:28px;border:#e8e8e8 1px solid; border-radius:5px; padding:4px; width:140px; color:#a4a4a4; font:12px/20px Arial; margin:0 0 15px 0;}
+.theme_settings_container select#skin_font{margin-bottom:17px;}
+.theme_settings_container select:hover{color:#000;}
+.theme_settings_container #color_scheme{overflow:hidden; margin:0 0 11px 0;}
+.theme_settings_container #color_scheme li{float:left; width:28px; height:23px;}
+.theme_settings_container #color_scheme li a{display:block; width:0; height:0; position:relative; overflow:hidden; padding:19px 0 0 24px; font-size:0;}
+.theme_settings_container li a#blue{background:url(images/settings/col_blue.png);}
+.theme_settings_container li a#orange{background:url(images/settings/col_orange.png);}
+.theme_settings_container li a#red{background:url(images/settings/col_red.png);}
+.theme_settings_container li a#green{background:url(images/settings/col_green.png);}
+.theme_settings_container li a#dark_blue{background:url(images/settings/col_blue_dark.png);}
+.theme_settings_container li a#sea_wave{background:url(images/settings/col_sea_wave.png);}
+.theme_settings_container li a#purple{background:url(images/settings/col_violet.png);}
+.theme_settings_container li a#dark_green{background:url(images/settings/col_dark_green.png);}
+.theme_settings_container li a#dark_red{background:url(images/settings/col_dark_red.png);}
+
+
+.theme_settings_container #pattern_scheme{overflow:hidden; margin:0 0 11px 0;}
+.theme_settings_container #pattern_scheme li{float:left; padding:0 4px 4px 0;}
+.theme_settings_container #pattern_scheme li a{display:block; width:0; height:0; position:relative; overflow:hidden; padding:19px 0 0 24px; font-size:0;}
+.theme_settings_container li a#wide_cells{background:url(images/settings/pattern_1.jpg);}
+.theme_settings_container li a#wide_diagonal_cells{background:url(images/settings/pattern_2.jpg);}
+.theme_settings_container li a#huge_cells{background:url(images/settings/pattern_3.jpg);}
+.theme_settings_container li a#diagonal_cells{background:url(images/settings/pattern_4.jpg);}
+.theme_settings_container li a#vertical_lines{background:url(images/settings/pattern_5.jpg);}
+.theme_settings_container li a#cells{background:url(images/settings/pattern_6.jpg);}
+.theme_settings_container li a#wood{background:url(images/settings/pattern_7.jpg);}
+
+/*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ COLOR THEMES _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+/*____________________________________________/ blue theme \_______________________________________________ */
+	/* colors */
+body.blue #main_menu li.active > a,
+body.blue #main_menu li:hover > a,
+body.blue .general_read_more_1,
+body.blue .block_slogan p span,
+body.blue .lnk_w_arrow_general,
+body.blue .block_filter li a.active,
+body.blue .block_filter li a:hover,
+body.blue .block_general_pic_w_desc h3 a:hover,
+body.blue .lnk_w_arrow_1:hover,
+body.blue .block_testimonials_1 a,
+body.blue #footer .col_2 a,
+body.blue #footer .col_3 a,
+body.blue .table_type_3 .price td,
+body.blue .list_1 li a:hover,
+body.blue .list_2 li a:hover,
+body.blue .list_3 li a:hover,
+body.blue .list_4 li a:hover,
+body.blue .list_5 li a:hover,
+body.blue .list_6 li a:hover,
+body.blue .list_6 li a:hover span,
+body.blue .block_popular_posts .text .title a:hover,
+body.blue .page_archives .latest_post li a,
+body.blue .gall_latest_works a:hover .image-title,
+body.blue .sitemap_list h4 a,
+body.blue .block_portfolio_2c .block_two_columns h3 a:hover,
+body.blue .block_portfolio_3c .block_three_columns h3 a:hover,
+body.blue .block_portfolio_4c .block_four_columns h3 a:hover,
+body.blue .block_portfolio_side .block_two_columns h3 a:hover,
+body.blue .block_portfolio_side .block_three_columns h3 a:hover,
+body.blue .block_portfolio_2c a.readMore,
+body.blue .block_paginator a:hover,
+body.blue .block_paginator a.next:hover,
+body.blue .block_paginator a.prev:hover,
+body.blue .block_portfolio_3c a.readMore,
+body.blue .block_portfolio_4c a.readMore,
+body.blue .block_blog_type_5 .blog_info a:hover,
+body.blue .block_blog_type_5 .title .num_comments,
+body.blue .block_latest_tweets .tweet a,
+body.blue .block_blog_type_6 a.link_blue,
+body.blue .block_blog_type_6 .title .num_comments,
+body.blue .block_blog_type_6 .blog_info a:hover,
+body.blue .block_blog_type_1 .title .num_comments,
+body.blue .block_blog_type_1 a.link_blue,
+body.blue .block_blog_type_1 .blog_info a:hover,
+body.blue .block_blog_type_2 .title .num_comments,
+body.blue .block_blog_type_2 a.link_blue,
+body.blue .block_blog_type_2 .blog_info a:hover,
+body.blue .block_blog_type_3 .title .num_comments,
+body.blue .block_blog_type_3 .blog_info a:hover,
+body.blue .block_blog_type_4 .title .num_comments,
+body.blue .block_blog_type_4 .blog_info a:hover,
+body.blue .block_blog_post a.link_blue,
+body.blue .block_blog_post .post_info a:hover,
+body.blue .block_comments .title a,
+body.blue .block_comments .comments .comment .comment_content a,
+body.blue .block_our_team .position a,
+body.blue .block_testimonials_2 a,
+body.blue .block_contact_info a,
+body.blue .sign_popup h3,
+body#theme_dark.blue .block_general_pic_w_desc h3 a:hover,
+body#theme_light .block_content_top .text_1 .text_slider_title span{color:#0589C6;}
+body.blue .lnk_w_arrow_1:hover{background-image:url(../images/arrow_3.gif) !important;}
+
+body.blue .lnk_w_arrow_general:hover,
+body.blue .block_portfolio_2c a.readMore:hover,
+body.blue .block_portfolio_3c a.readMore:hover,
+body.blue .block_portfolio_4c a.readMore:hover{color:#768b94;}
+
+
+/*____________________________________________/ dark_blue theme \_______________________________________________ */
+/* bg */
+body.dark_blue .wrapper {background-image:url(images/dark_blue/bg_main.jpg);}
+body.dark_blue.big_blue .wrapper {background-image:url(images/dark_blue/bg_main_269.jpg);}
+body.dark_blue.biggest_blue .wrapper {background-image:url(images/dark_blue/bg_main_285.jpg);}
+body.dark_blue.blue_3d .wrapper {background-image:url(images/dark_blue/bg_main_285.jpg);}
+body.dark_blue.thumbnail_bg .wrapper {background-image:url(images/dark_blue/thumbnail_bg.png);}
+body.dark_blue.brillant_blue .wrapper {background-image:url(images/dark_blue/bg_main_304.png);}
+body.dark_blue.accordation_page .wrapper {background-image:url(images/dark_blue/bg_main_300.jpg);}
+body.dark_blue #main_menu li.active > a,
+body.dark_blue #main_menu li:hover > a{background-image:url(images/dark_blue/arrow_main_menu.png);}
+body.dark_blue #title_top img{background-image:url(images/dark_blue/logo_top.png);}
+body.dark_blue #title_bottom a img{background-image:url(images/dark_blue/logo_bott.png);}
+/* ico */
+body.dark_blue #slider_side_nav a.activeSlide,
+body.dark_blue #recent_projects_pager a.selected,
+body.dark_blue .nivo-controlNav a.active,
+body.dark_blue #latest_projects_pager a.selected,
+body.dark_blue #recent_works_nav a.activeSlide{background:url(images/dark_blue/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.dark_blue .lnk_w_arrow_1:hover{background-image:url(images/dark_blue/arrow_3.png) !important;}
+body.dark_blue .lnk_w_arrow_general{background-image:url(images/dark_blue/arrow_general.png);}
+body.dark_blue .lnk_w_arrow_general:hover{background-image:url(images/dark_blue/arrow_general_act.png);}
+body.dark_blue #sB-Navi a.roundThumb.active,
+body.dark_blue #sB-Navi a.roundThumb.active:hover{background:url(images/dark_blue/ico_slider.png) no-repeat 0 0 !important;}
+body.dark_blue .list_5 li {background-image:url(images/dark_blue/list_5.png);}
+body.dark_blue .list_1 li a:hover {background-image:url(images/dark_blue/list_1_act.png);}
+body.dark_blue .list_2 li a:hover {background-image:url(images/dark_blue/list_2_act.png);}
+body.dark_blue .list_3 li a:hover {background-image:url(images/dark_blue/list_3_act.png);}
+body.dark_blue .list_4 li a:hover {background-image:url(images/dark_blue/list_4_act.png);}
+body.dark_blue .block_navi a.block_navi_prev {background-image:url(images/dark_blue/arrow_navi_prev.png);}
+body.dark_blue .block_navi a.block_navi_next {background-image:url(images/dark_blue/arrow_navi_next.png);}
+body.dark_blue .portfolio_detail_gallery a.pg-prevNav,
+body.dark_blue .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/dark_blue/nivo_detail.png) !important;}
+body.dark_blue ul.list_portfolio_link li a:hover,
+body.dark_blue ul.list_portfolio_link li.active a{background-image:url(images/dark_blue/portfolio_list_act.png);}
+/* buttons */
+body.dark_blue .general_button_1{background-image:url(images/dark_blue/bg_button_general.png);text-shadow: 0 -1px #486971;}
+body.dark_blue .button_lnk.blue.def_link,
+body.dark_blue .button_lnk.blue.def_link span,
+body.dark_blue .button_lnk.blue.def_link input{background-image:url(../images/button_grey.png); text-shadow: 0 -1px #486971;}
+/* color */
+body.dark_blue #main_menu li.active > a,
+body.dark_blue #main_menu li:hover > a,
+body.dark_blue .general_read_more_1,
+body.dark_blue .block_slogan p span,
+body.dark_blue .lnk_w_arrow_general,
+body.dark_blue .block_filter li a.active,
+body.dark_blue .block_filter li a:hover,
+body.dark_blue .block_general_pic_w_desc h3 a:hover,
+body.dark_blue .lnk_w_arrow_1:hover,
+body.dark_blue .block_testimonials_1 a,
+body.dark_blue #footer .col_2 a,
+body.dark_blue #footer .col_3 a,
+body.dark_blue .table_type_3 .price td,
+body.dark_blue .list_1 li a:hover,
+body.dark_blue .list_2 li a:hover,
+body.dark_blue .list_3 li a:hover,
+body.dark_blue .list_4 li a:hover,
+body.dark_blue .list_5 li a:hover,
+body.dark_blue .list_6 li a:hover,
+body.dark_blue .list_6 li a:hover span,
+body.dark_blue .block_popular_posts .text .title a:hover,
+body.dark_blue .page_archives .latest_post li a,
+body.dark_blue .gall_latest_works a:hover .image-title,
+body.dark_blue .sitemap_list h4,
+body.dark_blue .sitemap_list h4 a,
+body.dark_blue .block_portfolio_2c .block_two_columns h3 a:hover,
+body.dark_blue .block_portfolio_3c .block_three_columns h3 a:hover,
+body.dark_blue .block_portfolio_4c .block_four_columns h3 a:hover,
+body.dark_blue .block_portfolio_side .block_two_columns h3 a:hover,
+body.dark_blue .block_portfolio_side .block_three_columns h3 a:hover,
+body.dark_blue .block_portfolio_2c a.readMore,
+body.dark_blue .block_paginator a:hover,
+body.dark_blue .block_paginator a.next:hover,
+body.dark_blue .block_paginator a.prev:hover,
+body.dark_blue .block_portfolio_3c a.readMore,
+body.dark_blue .block_portfolio_4c a.readMore,
+body.dark_blue .block_blog_type_5 .blog_info a:hover,
+body.dark_blue .block_blog_type_5 .title .num_comments,
+body.dark_blue .block_latest_tweets .tweet a,
+body.dark_blue .block_blog_type_6 a.link_blue,
+body.dark_blue .block_blog_type_6 .title .num_comments,
+body.dark_blue .block_blog_type_6 .blog_info a:hover,
+body.dark_blue .block_blog_type_1 .title .num_comments,
+body.dark_blue .block_blog_type_1 a.link_blue,
+body.dark_blue .block_blog_type_1 .blog_info a:hover,
+body.dark_blue .block_blog_type_2 .title .num_comments,
+body.dark_blue .block_blog_type_2 a.link_blue,
+body.dark_blue .block_blog_type_2 .blog_info a:hover,
+body.dark_blue .block_blog_type_3 .title .num_comments,
+body.dark_blue .block_blog_type_3 .blog_info a:hover,
+body.dark_blue .block_blog_type_4 .title .num_comments,
+body.dark_blue .block_blog_type_4 .blog_info a:hover,
+body.dark_blue .block_blog_post a.link_blue,
+body.dark_blue .block_blog_post .post_info a:hover,
+body.dark_blue .block_comments .title a,
+body.dark_blue .block_comments .comments .comment .comment_content a,
+body.dark_blue .block_our_team .position a,
+body.dark_blue .block_testimonials_2 a,
+body.dark_blue .block_contact_info a,
+body.dark_blue .sign_popup h3,
+body#theme_dark.dark_blue .block_general_pic_w_desc h3 a:hover,
+body#theme_light.dark_blue .block_content_top .text_1 .text_slider_title span{color:#658f99;}
+
+body.dark_blue .lnk_w_arrow_general:hover,
+body.dark_blue .block_portfolio_2c a.readMore:hover,
+body.dark_blue .block_portfolio_3c a.readMore:hover,
+body.dark_blue .block_portfolio_4c a.readMore:hover{color:#567982;}
+body.dark_blue .block_content_top .text_1 p {color:#f6f7f7;}
+body.dark_blue .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.dark_blue .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.dark_blue .block_page_title .title {color:#ffffff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.dark_blue .block_page_title .subtitle,
+body.dark_blue .block_back a {color:#f0f5f7;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+/*____________________________________________/ green theme \_______________________________________________ */
+/* bg */
+body.green .wrapper {background-image:url(images/green/bg_main.jpg);}
+body.green.big_blue .wrapper {background-image:url(images/green/bg_main_269.jpg);}
+body.green.biggest_blue .wrapper {background-image:url(images/green/bg_main_285.jpg);}
+body.green.blue_3d .wrapper {background-image:url(images/green/bg_main_285.jpg);}
+body.green.thumbnail_bg .wrapper {background-image:url(images/green/thumbnail_bg.png);}
+body.green.brillant_blue .wrapper {background-image:url(images/green/bg_main_304.png);}
+body.green.accordation_page .wrapper {background-image:url(images/green/bg_main_300.jpg);}
+body.green #main_menu li.active > a,
+body.green #main_menu li:hover > a{background-image:url(images/green/arrow_main_menu.png);}
+body.green #title_top img{background-image:url(images/green/logo_top.png);}
+body.green #title_bottom a img{background-image:url(images/green/logo_bott.png);}
+/* ico */
+body.green #slider_side_nav a.activeSlide,
+body.green #recent_projects_pager a.selected,
+body.green .nivo-controlNav a.active,
+body.green #latest_projects_pager a.selected,
+body.green #recent_works_nav a.activeSlide {background:url(images/green/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.green .lnk_w_arrow_1:hover{background-image:url(images/green/arrow_3.png) !important;}
+body.green .lnk_w_arrow_general{background-image:url(images/green/arrow_general.png);}
+body.green .lnk_w_arrow_general:hover{background-image:url(images/green/arrow_general_act.png);}
+body.green #sB-Navi a.roundThumb.active,
+body.green #sB-Navi a.roundThumb.active:hover{background:url(images/green/ico_slider.png) no-repeat 0 0 !important;}
+body.green .list_5 li {background-image:url(images/green/list_5.png);}
+body.green .list_1 li a:hover {background-image:url(images/green/list_1_act.png);}
+body.green .list_2 li a:hover {background-image:url(images/green/list_2_act.png);}
+body.green .list_3 li a:hover {background-image:url(images/green/list_3_act.png);}
+body.green .list_4 li a:hover {background-image:url(images/green/list_4_act.png);}
+body.green .block_navi a.block_navi_prev {background-image:url(images/green/arrow_navi_prev.png);}
+body.green .block_navi a.block_navi_next {background-image:url(images/green/arrow_navi_next.png);}
+body.green .portfolio_detail_gallery a.pg-prevNav,
+body.green .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/green/nivo_detail.png) !important;}
+body.green ul.list_portfolio_link li a:hover,
+body.green ul.list_portfolio_link li.active a{background-image:url(images/green/portfolio_list_act.png);}
+/* buttons */
+body.green .general_button_1{background-image:url(images/green/bg_button_general.png);text-shadow: 0 -1px #5e7636;}
+body.green .button_lnk.blue.def_link,
+body.green .button_lnk.blue.def_link span,
+body.green .button_lnk.blue.def_link input{background-image:url(../images/button_lightgreen.png); text-shadow: 0 -1px #5e7636;}
+/* color */
+body.green #main_menu li.active > a,
+body.green #main_menu li:hover > a,
+body.green .general_read_more_1,
+body.green .block_slogan p span,
+body.green .lnk_w_arrow_general,
+body.green .block_filter li a.active,
+body.green .block_filter li a:hover,
+body.green .block_general_pic_w_desc h3 a:hover,
+body.green .lnk_w_arrow_1:hover,
+body.green .block_testimonials_1 a,
+body.green #footer .col_2 a,
+body.green #footer .col_3 a,
+body.green .table_type_3 .price td,
+body.green .list_1 li a:hover,
+body.green .list_2 li a:hover,
+body.green .list_3 li a:hover,
+body.green .list_4 li a:hover,
+body.green .list_5 li a:hover,
+body.green .list_6 li a:hover,
+body.green .list_6 li a:hover span,
+body.green .block_popular_posts .text .title a:hover,
+body.green .page_archives .latest_post li a,
+body.green .gall_latest_works a:hover .image-title,
+body.green .sitemap_list h4,
+body.green .sitemap_list h4 a,
+body.green .block_portfolio_2c .block_two_columns h3 a:hover,
+body.green .block_portfolio_3c .block_three_columns h3 a:hover,
+body.green .block_portfolio_4c .block_four_columns h3 a:hover,
+body.green .block_portfolio_side .block_two_columns h3 a:hover,
+body.green .block_portfolio_side .block_three_columns h3 a:hover,
+body.green .block_portfolio_2c a.readMore,
+body.green .block_paginator a:hover,
+body.green .block_paginator a.next:hover,
+body.green .block_paginator a.prev:hover,
+body.green .block_portfolio_3c a.readMore,
+body.green .block_portfolio_4c a.readMore,
+body.green .block_blog_type_5 .blog_info a:hover,
+body.green .block_blog_type_5 .title .num_comments,
+body.green .block_latest_tweets .tweet a,
+body.green .block_blog_type_6 a.link_blue,
+body.green .block_blog_type_6 .title .num_comments,
+body.green .block_blog_type_6 .blog_info a:hover,
+body.green .block_blog_type_1 .title .num_comments,
+body.green .block_blog_type_1 a.link_blue,
+body.green .block_blog_type_1 .blog_info a:hover,
+body.green .block_blog_type_2 .title .num_comments,
+body.green .block_blog_type_2 a.link_blue,
+body.green .block_blog_type_2 .blog_info a:hover,
+body.green .block_blog_type_3 .title .num_comments,
+body.green .block_blog_type_3 .blog_info a:hover,
+body.green .block_blog_type_4 .title .num_comments,
+body.green .block_blog_type_4 .blog_info a:hover,
+body.green .block_blog_post a.link_blue,
+body.green .block_blog_post .post_info a:hover,
+body.green .block_comments .title a,
+body.green .block_comments .comments .comment .comment_content a,
+body.green .block_our_team .position a,
+body.green .block_testimonials_2 a,
+body.green .block_contact_info a,
+body.green .sign_popup h3,
+body#theme_dark.green .block_general_pic_w_desc h3 a:hover,
+body#theme_light.green .block_content_top .text_1 .text_slider_title span{color:#8aad50;}
+
+body.green .lnk_w_arrow_general:hover,
+body.green .block_portfolio_2c a.readMore:hover,
+body.green .block_portfolio_3c a.readMore:hover,
+body.green .block_portfolio_4c a.readMore:hover{color:#759444;}
+body.green .block_content_top .text_1 p {color:#f6f7f7;}
+body.green .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.green .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.green .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.green .block_page_title .subtitle,
+body.green .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+
+/*____________________________________________/ light_green theme \_______________________________________________ */
+/* bg */
+body.light_green .wrapper {background-image:url(images/light_green/bg_main.jpg);}
+body.light_green.big_blue .wrapper {background-image:url(images/light_green/bg_main_269.jpg);}
+body.light_green.biggest_blue .wrapper {background-image:url(images/light_green/bg_main_285.jpg);}
+body.light_green.blue_3d .wrapper {background-image:url(images/light_green/bg_main_285.jpg);}
+body.light_green.thumbnail_bg .wrapper {background-image:url(images/light_green/thumbnail_bg.png);}
+body.light_green.brillant_blue .wrapper {background-image:url(images/light_green/bg_main_304.png);}
+body.light_green.accordation_page .wrapper {background-image:url(images/light_green/bg_main_300.jpg);}
+body.light_green #main_menu li.active > a,
+body.light_green #main_menu li:hover > a{background-image:url(images/light_green/arrow_main_menu.png);}
+body.light_green #title_top img{background-image:url(images/light_green/logo_top.png);}
+body.light_green #title_bottom a img{background-image:url(images/light_green/logo_bott.png);}
+/* ico */
+body.light_green #slider_side_nav a.activeSlide,
+body.light_green #recent_projects_pager a.selected,
+body.light_green .nivo-controlNav a.active,
+body.light_green #latest_projects_pager a.selected,
+body.light_green #recent_works_nav a.activeSlide {background:url(images/light_green/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.light_green .lnk_w_arrow_1:hover{background-image:url(images/light_green/arrow_3.png) !important;}
+body.light_green .lnk_w_arrow_general{background-image:url(images/light_green/arrow_general.png);}
+body.light_green .lnk_w_arrow_general:hover{background-image:url(images/light_green/arrow_general_act.png);}
+body.light_green #sB-Navi a.roundThumb.active,
+body.light_green #sB-Navi a.roundThumb.active:hover{background:url(images/light_green/ico_slider.png) no-repeat 0 0 !important;}
+body.light_green .list_5 li {background-image:url(images/light_green/list_5.png);}
+body.light_green .list_1 li a:hover {background-image:url(images/light_green/list_1_act.png);}
+body.light_green .list_2 li a:hover {background-image:url(images/light_green/list_2_act.png);}
+body.light_green .list_3 li a:hover {background-image:url(images/light_green/list_3_act.png);}
+body.light_green .list_4 li a:hover {background-image:url(images/light_green/list_4_act.png);}
+body.light_green .block_navi a.block_navi_prev {background-image:url(images/light_green/arrow_navi_prev.png);}
+body.light_green .block_navi a.block_navi_next {background-image:url(images/light_green/arrow_navi_next.png);}
+body.light_green .portfolio_detail_gallery a.pg-prevNav,
+body.light_green .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/light_green/nivo_detail.png) !important;}
+body.light_green ul.list_portfolio_link li a:hover,
+body.light_green ul.list_portfolio_link li.active a{background-image:url(images/light_green/portfolio_list_act.png);}
+/* buttons */
+body.light_green .general_button_1{background-image:url(images/light_green/bg_button_general.png);text-shadow: 0 -1px #406d05;}
+body.light_green .button_lnk.blue.def_link,
+body.light_green .button_lnk.blue.def_link span,
+body.light_green .button_lnk.blue.def_link input{background-image:url(../images/button_green.png); text-shadow: 0 -1px #406d05;}
+/* color */
+body.light_green #main_menu li.active > a,
+body.light_green #main_menu li:hover > a,
+body.light_green .general_read_more_1,
+body.light_green .block_slogan p span,
+body.light_green .lnk_w_arrow_general,
+body.light_green .block_filter li a.active,
+body.light_green .block_filter li a:hover,
+body.light_green .block_general_pic_w_desc h3 a:hover,
+body.light_green .lnk_w_arrow_1:hover,
+body.light_green .block_testimonials_1 a,
+body.light_green #footer .col_2 a,
+body.light_green #footer .col_3 a,
+body.light_green .table_type_3 .price td,
+body.light_green .list_1 li a:hover,
+body.light_green .list_2 li a:hover,
+body.light_green .list_3 li a:hover,
+body.light_green .list_4 li a:hover,
+body.light_green .list_5 li a:hover,
+body.light_green .list_6 li a:hover,
+body.light_green .list_6 li a:hover span,
+body.light_green .block_popular_posts .text .title a:hover,
+body.light_green .page_archives .latest_post li a,
+body.light_green .gall_latest_works a:hover .image-title,
+body.light_green .sitemap_list h4,
+body.light_green .sitemap_list h4 a,
+body.light_green .block_portfolio_2c .block_two_columns h3 a:hover,
+body.light_green .block_portfolio_3c .block_three_columns h3 a:hover,
+body.light_green .block_portfolio_4c .block_four_columns h3 a:hover,
+body.light_green .block_portfolio_side .block_two_columns h3 a:hover,
+body.light_green .block_portfolio_side .block_three_columns h3 a:hover,
+body.light_green .block_portfolio_2c a.readMore,
+body.light_green .block_paginator a:hover,
+body.light_green .block_paginator a.next:hover,
+body.light_green .block_paginator a.prev:hover,
+body.light_green .block_portfolio_3c a.readMore,
+body.light_green .block_portfolio_4c a.readMore,
+body.light_green .block_blog_type_5 .blog_info a:hover,
+body.light_green .block_blog_type_5 .title .num_comments,
+body.light_green .block_latest_tweets .tweet a,
+body.light_green .block_blog_type_6 a.link_blue,
+body.light_green .block_blog_type_6 .title .num_comments,
+body.light_green .block_blog_type_6 .blog_info a:hover,
+body.light_green .block_blog_type_1 .title .num_comments,
+body.light_green .block_blog_type_1 a.link_blue,
+body.light_green .block_blog_type_1 .blog_info a:hover,
+body.light_green .block_blog_type_2 .title .num_comments,
+body.light_green .block_blog_type_2 a.link_blue,
+body.light_green .block_blog_type_2 .blog_info a:hover,
+body.light_green .block_blog_type_3 .title .num_comments,
+body.light_green .block_blog_type_3 .blog_info a:hover,
+body.light_green .block_blog_type_4 .title .num_comments,
+body.light_green .block_blog_type_4 .blog_info a:hover,
+body.light_green .block_blog_post a.link_blue,
+body.light_green .block_blog_post .post_info a:hover,
+body.light_green .block_comments .title a,
+body.light_green .block_comments .comments .comment .comment_content a,
+body.light_green .block_our_team .position a,
+body.light_green .block_testimonials_2 a,
+body.light_green .block_contact_info a,
+body.light_green .sign_popup h3,
+body#theme_dark.light_green .block_general_pic_w_desc h3 a:hover,
+body#theme_light.light_green .block_content_top .text_1 .text_slider_title span{color:#569307;}
+body.light_green .lnk_w_arrow_general:hover,
+body.light_green .block_portfolio_2c a.readMore:hover,
+body.light_green .block_portfolio_3c a.readMore:hover,
+body.light_green .block_portfolio_4c a.readMore:hover{color:#457407;}
+body.light_green .block_content_top .text_1 p {color:#f6f7f7;}
+body.light_green .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.light_green .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.light_green .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.light_green .block_page_title .subtitle,
+body.light_green .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+/*____________________________________________/ dark_red theme \_______________________________________________ */
+/* bg */
+body.dark_red .wrapper {background-image:url(images/dark_red/bg_main.jpg);}
+body.dark_red.big_blue .wrapper {background-image:url(images/dark_red/bg_main_269.jpg);}
+body.dark_red.biggest_blue .wrapper {background-image:url(images/dark_red/bg_main_285.jpg);}
+body.dark_red.blue_3d .wrapper {background-image:url(images/dark_red/bg_main_285.jpg);}
+body.dark_red.thumbnail_bg .wrapper {background-image:url(images/dark_red/thumbnail_bg.png);}
+body.dark_red.brillant_blue .wrapper {background-image:url(images/dark_red/bg_main_304.png);}
+body.dark_red.accordation_page .wrapper {background-image:url(images/dark_red/bg_main_300.jpg);}
+body.dark_red #main_menu li.active > a,
+body.dark_red #main_menu li:hover > a{background-image:url(images/dark_red/arrow_main_menu.png);}
+body.dark_red #title_top img{background-image:url(images/dark_red/logo_top.png);}
+body.dark_red #title_bottom a img{background-image:url(images/dark_red/logo_bott.png);}
+/* ico */
+body.dark_red #slider_side_nav a.activeSlide,
+body.dark_red #recent_projects_pager a.selected,
+body.dark_red .nivo-controlNav a.active,
+body.dark_red #latest_projects_pager a.selected,
+body.dark_red #recent_works_nav a.activeSlide {background:url(images/dark_red/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.dark_red .lnk_w_arrow_1:hover{background-image:url(images/dark_red/arrow_3.png) !important;}
+body.dark_red .lnk_w_arrow_general{background-image:url(images/dark_red/arrow_general.png);}
+body.dark_red .lnk_w_arrow_general:hover{background-image:url(images/dark_red/arrow_general_act.png);}
+body.dark_red #sB-Navi a.roundThumb.active,
+body.dark_red #sB-Navi a.roundThumb.active:hover{background:url(images/dark_red/ico_slider.png) no-repeat 0 0 !important;}
+body.dark_red .list_5 li {background-image:url(images/dark_red/list_5.png);}
+body.dark_red .list_1 li a:hover {background-image:url(images/dark_red/list_1_act.png);}
+body.dark_red .list_2 li a:hover {background-image:url(images/dark_red/list_2_act.png);}
+body.dark_red .list_3 li a:hover {background-image:url(images/dark_red/list_3_act.png);}
+body.dark_red .list_4 li a:hover {background-image:url(images/dark_red/list_4_act.png);}
+body.dark_red .block_navi a.block_navi_prev {background-image:url(images/dark_red/arrow_navi_prev.png);}
+body.dark_red .block_navi a.block_navi_next {background-image:url(images/dark_red/arrow_navi_next.png);}
+body.dark_red .portfolio_detail_gallery a.pg-prevNav,
+body.dark_red .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/dark_red/nivo_detail.png) !important;}
+body.dark_red ul.list_portfolio_link li a:hover,
+body.dark_red ul.list_portfolio_link li.active a{background-image:url(images/dark_red/portfolio_list_act.png);}
+/* buttons */
+body.dark_red .general_button_1{background-image:url(images/dark_red/bg_button_general.png);text-shadow: 0 -1px #670e10;}
+body.dark_red .button_lnk.blue.def_link,
+body.dark_red .button_lnk.blue.def_link span,
+body.dark_red .button_lnk.blue.def_link input{background-image:url(../images/button_green.png); text-shadow: 0 -1px #670e10;}
+/* color */
+body.dark_red #main_menu li.active > a,
+body.dark_red #main_menu li:hover > a,
+body.dark_red .general_read_more_1,
+body.dark_red .block_slogan p span,
+body.dark_red .lnk_w_arrow_general,
+body.dark_red .block_filter li a.active,
+body.dark_red .block_filter li a:hover,
+body.dark_red .block_general_pic_w_desc h3 a:hover,
+body.dark_red .lnk_w_arrow_1:hover,
+body.dark_red .block_testimonials_1 a,
+body.dark_red #footer .col_2 a,
+body.dark_red #footer .col_3 a,
+body.dark_red .table_type_3 .price td,
+body.dark_red .list_1 li a:hover,
+body.dark_red .list_2 li a:hover,
+body.dark_red .list_3 li a:hover,
+body.dark_red .list_4 li a:hover,
+body.dark_red .list_5 li a:hover,
+body.dark_red .list_6 li a:hover,
+body.dark_red .list_6 li a:hover span,
+body.dark_red .block_popular_posts .text .title a:hover,
+body.dark_red .page_archives .latest_post li a,
+body.dark_red .gall_latest_works a:hover .image-title,
+body.dark_red .sitemap_list h4,
+body.dark_red .sitemap_list h4 a,
+body.dark_red .block_portfolio_2c .block_two_columns h3 a:hover,
+body.dark_red .block_portfolio_3c .block_three_columns h3 a:hover,
+body.dark_red .block_portfolio_4c .block_four_columns h3 a:hover,
+body.dark_red .block_portfolio_side .block_two_columns h3 a:hover,
+body.dark_red .block_portfolio_side .block_three_columns h3 a:hover,
+body.dark_red .block_portfolio_2c a.readMore,
+body.dark_red .block_paginator a:hover,
+body.dark_red .block_paginator a.next:hover,
+body.dark_red .block_paginator a.prev:hover,
+body.dark_red .block_portfolio_3c a.readMore,
+body.dark_red .block_portfolio_4c a.readMore,
+body.dark_red .block_blog_type_5 .blog_info a:hover,
+body.dark_red .block_blog_type_5 .title .num_comments,
+body.dark_red .block_latest_tweets .tweet a,
+body.dark_red .block_blog_type_6 a.link_blue,
+body.dark_red .block_blog_type_6 .title .num_comments,
+body.dark_red .block_blog_type_6 .blog_info a:hover,
+body.dark_red .block_blog_type_1 .title .num_comments,
+body.dark_red .block_blog_type_1 a.link_blue,
+body.dark_red .block_blog_type_1 .blog_info a:hover,
+body.dark_red .block_blog_type_2 .title .num_comments,
+body.dark_red .block_blog_type_2 a.link_blue,
+body.dark_red .block_blog_type_2 .blog_info a:hover,
+body.dark_red .block_blog_type_3 .title .num_comments,
+body.dark_red .block_blog_type_3 .blog_info a:hover,
+body.dark_red .block_blog_type_4 .title .num_comments,
+body.dark_red .block_blog_type_4 .blog_info a:hover,
+body.dark_red .block_blog_post a.link_blue,
+body.dark_red .block_blog_post .post_info a:hover,
+body.dark_red .block_comments .title a,
+body.dark_red .block_comments .comments .comment .comment_content a,
+body.dark_red .block_our_team .position a,
+body.dark_red .block_testimonials_2 a,
+body.dark_red .block_contact_info a,
+body.dark_red .sign_popup h3,
+body#theme_dark.dark_red .block_general_pic_w_desc h3 a:hover,
+body#theme_light.dark_red .block_content_top .text_1 .text_slider_title span{color:#931b1c;}
+body.dark_red .lnk_w_arrow_general:hover,
+body.dark_red .block_portfolio_2c a.readMore:hover,
+body.dark_red .block_portfolio_3c a.readMore:hover,
+body.dark_red .block_portfolio_4c a.readMore:hover{color:#c04b4c;}
+body.dark_red .block_content_top .text_1 p {color:#f6f7f7;}
+body.dark_red .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.dark_red .block_content_top .text_1 .text_slider_title span {color:#262626;}
+body.dark_red .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.dark_red .block_page_title .subtitle,
+body.dark_red .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+/*____________________________________________/ orange theme \_______________________________________________ */
+/* bg */
+body.orange  .wrapper {background-image:url(images/orange/bg_main.jpg);}
+body.orange.big_blue .wrapper {background-image:url(images/orange/bg_main_269.jpg);}
+body.orange.biggest_blue .wrapper {background-image:url(images/orange/bg_main_285.jpg);}
+body.orange.blue_3d .wrapper {background-image:url(images/orange/bg_main_285.jpg);}
+body.orange.thumbnail_bg .wrapper {background-image:url(images/orange/thumbnail_bg.png);}
+body.orange.brillant_blue .wrapper {background-image:url(images/orange/bg_main_304.png);}
+body.orange.accordation_page .wrapper {background-image:url(images/orange/bg_main_300.jpg);}
+body.orange #main_menu li.active > a,
+body.orange #main_menu li:hover > a{background-image:url(images/orange/arrow_main_menu.png);}
+body.orange #title_top img{background-image:url(images/orange/logo_top.png);}
+body.orange #title_bottom a img{background-image:url(images/orange/logo_bott.png);}
+/* ico */
+body.orange #slider_side_nav a.activeSlide,
+body.orange #recent_projects_pager a.selected,
+body.orange .nivo-controlNav a.active,
+body.orange #latest_projects_pager a.selected,
+body.orange #recent_works_nav a.activeSlide {background:url(images/orange/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.orange .lnk_w_arrow_1:hover{background-image:url(images/orange/arrow_3.gif) !important;}
+body.orange .lnk_w_arrow_general{background-image:url(images/orange/arrow_general.gif);}
+body.orange .lnk_w_arrow_general:hover{background-image:url(images/orange/arrow_general_act.gif);}
+body.orange #sB-Navi a.roundThumb.active,
+body.orange #sB-Navi a.roundThumb.active:hover{background:url(images/orange/ico_slider.png) no-repeat 0 0 !important;}
+body.orange .list_5 li {background-image:url(images/orange/list_5.png);}
+body.orange .list_1 li a:hover {background-image:url(images/orange/list_1_act.png);}
+body.orange .list_2 li a:hover {background-image:url(images/orange/list_2_act.png);}
+body.orange .list_3 li a:hover {background-image:url(images/orange/list_3_act.png);}
+body.orange .list_4 li a:hover {background-image:url(images/orange/list_4_act.png);}
+body.orange .block_navi a.block_navi_prev {background-image:url(images/orange/arrow_navi_prev.png);}
+body.orange .block_navi a.block_navi_next {background-image:url(images/orange/arrow_navi_next.png);}
+body.orange .portfolio_detail_gallery a.pg-prevNav,
+body.orange .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/orange/nivo_detail.png) !important;}
+body.orange ul.list_portfolio_link li a:hover,
+body.orange ul.list_portfolio_link li.active a{background-image:url(images/orange/portfolio_list_act.png);}
+/* buttons */
+body.orange .general_button_1{background-image:url(images/orange/bg_button_general.png);text-shadow: 0 -1px #ab5d07;}
+body.orange .button_lnk.blue.def_link,
+body.orange .button_lnk.blue.def_link span,
+body.orange .button_lnk.blue.def_link input{background-image:url(../images/button_orange.png); text-shadow: 0 -1px #ab5d07;}
+/* color */
+body.orange #main_menu li.active > a,
+body.orange #main_menu li:hover > a,
+body.orange .general_read_more_1,
+body.orange .block_slogan p span,
+body.orange .lnk_w_arrow_general,
+body.orange .block_filter li a.active,
+body.orange .block_filter li a:hover,
+body.orange .block_general_pic_w_desc h3 a:hover,
+body.orange .lnk_w_arrow_1:hover,
+body.orange .block_testimonials_1 a,
+body.orange #footer .col_2 a,
+body.orange #footer .col_3 a,
+body.orange .table_type_3 .price td,
+body.orange .list_1 li a:hover,
+body.orange .list_2 li a:hover,
+body.orange .list_3 li a:hover,
+body.orange .list_4 li a:hover,
+body.orange .list_5 li a:hover,
+body.orange .list_6 li a:hover,
+body.orange .list_6 li a:hover span,
+body.orange .block_popular_posts .text .title a:hover,
+body.orange .page_archives .latest_post li a,
+body.orange .gall_latest_works a:hover .image-title,
+body.orange .sitemap_list h4,
+body.orange .sitemap_list h4 a,
+body.orange .block_portfolio_2c .block_two_columns h3 a:hover,
+body.orange .block_portfolio_3c .block_three_columns h3 a:hover,
+body.orange .block_portfolio_4c .block_four_columns h3 a:hover,
+body.orange .block_portfolio_side .block_two_columns h3 a:hover,
+body.orange .block_portfolio_side .block_three_columns h3 a:hover,
+body.orange .block_portfolio_2c a.readMore,
+body.orange .block_paginator a:hover,
+body.orange .block_paginator a.next:hover,
+body.orange .block_paginator a.prev:hover,
+body.orange .block_portfolio_3c a.readMore,
+body.orange .block_portfolio_4c a.readMore,
+body.orange .block_blog_type_5 .blog_info a:hover,
+body.orange .block_blog_type_5 .title .num_comments,
+body.orange .block_latest_tweets .tweet a,
+body.orange .block_blog_type_6 a.link_blue,
+body.orange .block_blog_type_6 .title .num_comments,
+body.orange .block_blog_type_6 .blog_info a:hover,
+body.orange .block_blog_type_1 .title .num_comments,
+body.orange .block_blog_type_1 a.link_blue,
+body.orange .block_blog_type_1 .blog_info a:hover,
+body.orange .block_blog_type_2 .title .num_comments,
+body.orange .block_blog_type_2 a.link_blue,
+body.orange .block_blog_type_2 .blog_info a:hover,
+body.orange .block_blog_type_3 .title .num_comments,
+body.orange .block_blog_type_3 .blog_info a:hover,
+body.orange .block_blog_type_4 .title .num_comments,
+body.orange .block_blog_type_4 .blog_info a:hover,
+body.orange .block_blog_post a.link_blue,
+body.orange .block_blog_post .post_info a:hover,
+body.orange .block_comments .title a,
+body.orange .block_comments .comments .comment .comment_content a,
+body.orange .block_our_team .position a,
+body.orange .block_testimonials_2 a,
+body.orange .block_contact_info a,
+body.orange .sign_popup h3,
+body#theme_dark.orange .block_general_pic_w_desc h3 a:hover,
+body#theme_light.orange .block_content_top .text_1 .text_slider_title span{color:#f78201;}
+
+body.orange .lnk_w_arrow_general:hover,
+body.orange .block_portfolio_2c a.readMore:hover,
+body.orange .block_portfolio_3c a.readMore:hover,
+body.orange .block_portfolio_4c a.readMore:hover{color:#d67002;}
+body.orange .block_content_top .text_1 p {color:#f6f7f7;}
+body.orange .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.orange .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.orange .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.orange .block_page_title .subtitle,
+body.orange .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+/*____________________________________________/ red theme \_______________________________________________ */
+/* bg */
+body.red .wrapper {background-image:url(images/red/bg_main.jpg);}
+body.red.big_blue .wrapper {background-image:url(images/red/bg_main_269.jpg);}
+body.red.biggest_blue .wrapper {background-image:url(images/red/bg_main_285.jpg);}
+body.red.blue_3d .wrapper {background-image:url(images/red/bg_main_285.jpg);}
+body.red.thumbnail_bg .wrapper {background-image:url(images/red/thumbnail_bg.png);}
+body.red.brillant_blue .wrapper {background-image:url(images/red/bg_main_304.png);}
+body.red.accordation_page .wrapper {background-image:url(images/red/bg_main_300.jpg);}
+body.red #main_menu li.active > a,
+body.red #main_menu li:hover > a{background-image:url(images/red/arrow_main_menu.png);}
+body.red #title_top img{background-image:url(images/red/logo_top.png);}
+body.red #title_bottom a img{background-image:url(images/red/logo_bott.png);}
+/* ico */
+body.red #slider_side_nav a.activeSlide,
+body.red #recent_projects_pager a.selected,
+body.red .nivo-controlNav a.active,
+body.red #latest_projects_pager a.selected,
+body.red #recent_works_nav a.activeSlide {background:url(images/red/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.red .lnk_w_arrow_1:hover{background-image:url(images/red/arrow_3.png) !important;}
+body.red .lnk_w_arrow_general{background-image:url(images/red/arrow_general.png);}
+body.red .lnk_w_arrow_general:hover{background-image:url(images/red/arrow_general_act.png);}
+body.red #sB-Navi a.roundThumb.active,
+body.red #sB-Navi a.roundThumb.active:hover{background:url(images/red/ico_slider.png) no-repeat 0 0 !important;}
+body.red .list_5 li {background-image:url(images/red/list_5.png);}
+body.red .list_1 li a:hover {background-image:url(images/red/list_1_act.png);}
+body.red .list_2 li a:hover {background-image:url(images/red/list_2_act.png);}
+body.red .list_3 li a:hover {background-image:url(images/red/list_3_act.png);}
+body.red .list_4 li a:hover {background-image:url(images/red/list_4_act.png);}
+body.red .block_navi a.block_navi_prev {background-image:url(images/red/arrow_navi_prev.png);}
+body.red .block_navi a.block_navi_next {background-image:url(images/red/arrow_navi_next.png);}
+body.red .portfolio_detail_gallery a.pg-prevNav,
+body.red .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/red/nivo_detail.png) !important;}
+body.red ul.list_portfolio_link li a:hover,
+body.red ul.list_portfolio_link li.active a{background-image:url(images/red/portfolio_list_act.png);}
+/* buttons */
+body.red .general_button_1{background-image:url(images/red/bg_button_general.png);text-shadow: 0 -1px #953529;}
+body.red .button_lnk.blue.def_link,
+body.red .button_lnk.blue.def_link span,
+body.red .button_lnk.blue.def_link input{background-image:url(../images/button_lightred.png); text-shadow: 0 -1px #953529;}
+/* color */
+body.red #main_menu li.active > a,
+body.red #main_menu li:hover > a,
+body.red .general_read_more_1,
+body.red .block_slogan p span,
+body.red .lnk_w_arrow_general,
+body.red .block_filter li a.active,
+body.red .block_filter li a:hover,
+body.red .block_general_pic_w_desc h3 a:hover,
+body.red .lnk_w_arrow_1:hover,
+body.red .block_testimonials_1 a,
+body.red #footer .col_2 a,
+body.red #footer .col_3 a,
+body.red .table_type_3 .price td,
+body.red .list_1 li a:hover,
+body.red .list_2 li a:hover,
+body.red .list_3 li a:hover,
+body.red .list_4 li a:hover,
+body.red .list_5 li a:hover,
+body.red .list_6 li a:hover,
+body.red .list_6 li a:hover span,
+body.red .block_popular_posts .text .title a:hover,
+body.red .page_archives .latest_post li a,
+body.red .gall_latest_works a:hover .image-title,
+body.red .sitemap_list h4,
+body.red .sitemap_list h4 a,
+body.red .block_portfolio_2c .block_two_columns h3 a:hover,
+body.red .block_portfolio_3c .block_three_columns h3 a:hover,
+body.red .block_portfolio_4c .block_four_columns h3 a:hover,
+body.red .block_portfolio_side .block_two_columns h3 a:hover,
+body.red .block_portfolio_side .block_three_columns h3 a:hover,
+body.red .block_portfolio_2c a.readMore,
+body.red .block_paginator a:hover,
+body.red .block_paginator a.next:hover,
+body.red .block_paginator a.prev:hover,
+body.red .block_portfolio_3c a.readMore,
+body.red .block_portfolio_4c a.readMore,
+body.red .block_blog_type_5 .blog_info a:hover,
+body.red .block_blog_type_5 .title .num_comments,
+body.red .block_latest_tweets .tweet a,
+body.red .block_blog_type_6 a.link_blue,
+body.red .block_blog_type_6 .title .num_comments,
+body.red .block_blog_type_6 .blog_info a:hover,
+body.red .block_blog_type_1 .title .num_comments,
+body.red .block_blog_type_1 a.link_blue,
+body.red .block_blog_type_1 .blog_info a:hover,
+body.red .block_blog_type_2 .title .num_comments,
+body.red .block_blog_type_2 a.link_blue,
+body.red .block_blog_type_2 .blog_info a:hover,
+body.red .block_blog_type_3 .title .num_comments,
+body.red .block_blog_type_3 .blog_info a:hover,
+body.red .block_blog_type_4 .title .num_comments,
+body.red .block_blog_type_4 .blog_info a:hover,
+body.red .block_blog_post a.link_blue,
+body.red .block_blog_post .post_info a:hover,
+body.red .block_comments .title a,
+body.red .block_comments .comments .comment .comment_content a,
+body.red .block_our_team .position a,
+body.red .block_testimonials_2 a,
+body.red .block_contact_info a,
+body.red .sign_popup h3,
+body#theme_dark.red .block_general_pic_w_desc h3 a:hover,
+body#theme_light.red .block_content_top .text_1 .text_slider_title span{color:#db4632;}
+
+body.red .lnk_w_arrow_general:hover,
+body.red .block_portfolio_2c a.readMore:hover,
+body.red .block_portfolio_3c a.readMore:hover,
+body.red .block_portfolio_4c a.readMore:hover{color:#d07a6e;}
+body.red .block_content_top .text_1 p {color:#f6f7f7;}
+body.red .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.red .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.red .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.red .block_page_title .subtitle,
+body.red .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+
+/*____________________________________________/ purple theme \_______________________________________________ */
+/* bg */
+body.purple .wrapper {background-image:url(images/purple/bg_main.jpg);}
+body.purple.big_blue .wrapper {background-image:url(images/purple/bg_main_269.jpg);}
+body.purple.biggest_blue .wrapper {background-image:url(images/purple/bg_main_285.jpg);}
+body.purple.blue_3d .wrapper {background-image:url(images/purple/bg_main_285.jpg);}
+body.purple.thumbnail_bg .wrapper {background-image:url(images/purple/thumbnail_bg.png);}
+body.purple.brillant_blue .wrapper {background-image:url(images/purple/bg_main_304.png);}
+body.purple.accordation_page .wrapper {background-image:url(images/purple/bg_main_300.jpg);}
+body.purple #main_menu li.active > a,
+body.purple #main_menu li:hover > a{background-image:url(images/purple/arrow_main_menu.png);}
+body.purple #title_top img{background-image:url(images/purple/logo_top.png);}
+body.purple #title_bottom a img{background-image:url(images/purple/logo_bott.png);}
+/* ico */
+body.purple #slider_side_nav a.activeSlide,
+body.purple #recent_projects_pager a.selected,
+body.purple .nivo-controlNav a.active,
+body.purple #latest_projects_pager a.selected,
+body.purple #recent_works_nav a.activeSlide {background:url(images/purple/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.purple .lnk_w_arrow_1:hover{background-image:url(images/purple/arrow_3.png) !important;}
+body.purple .lnk_w_arrow_general{background-image:url(images/purple/arrow_general.png);}
+body.purple .lnk_w_arrow_general:hover{background-image:url(images/purple/arrow_general_act.png);}
+body.purple #sB-Navi a.roundThumb.active,
+body.purple #sB-Navi a.roundThumb.active:hover{background:url(images/purple/ico_slider.png) no-repeat 0 0 !important;}
+body.purple .list_5 li {background-image:url(images/purple/list_5.png);}
+body.purple .list_1 li a:hover {background-image:url(images/purple/list_1_act.png);}
+body.purple .list_2 li a:hover {background-image:url(images/purple/list_2_act.png);}
+body.purple .list_3 li a:hover {background-image:url(images/purple/list_3_act.png);}
+body.purple .list_4 li a:hover {background-image:url(images/purple/list_4_act.png);}
+body.purple .list_6 li a:hover,
+body.purple .list_6 li a.active {background-image:url(images/purple/arrow_blog_cat_act.png);}
+body.purple .block_navi a.block_navi_prev {background-image:url(images/purple/arrow_navi_prev.png);}
+body.purple .block_navi a.block_navi_next {background-image:url(images/purple/arrow_navi_next.png);}
+body.purple .portfolio_detail_gallery a.pg-prevNav,
+body.purple .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/purple/nivo_detail.png) !important;}
+body.purple ul.list_portfolio_link li a:hover,
+body.purple ul.list_portfolio_link li.active a{background-image:url(images/purple/portfolio_list_act.png);}
+/* buttons */
+body.purple .general_button_1{background-image:url(images/purple/bg_button_general.png);text-shadow: 0 -1px #83164d;}
+body.purple .button_lnk.blue.def_link,
+body.purple .button_lnk.blue.def_link span,
+body.purple .button_lnk.blue.def_link input{background-image:url(../images/button_pink.png); text-shadow: 0 -1px #83164d;}
+/* color */
+body.purple #main_menu li.active > a,
+body.purple #main_menu li:hover > a,
+body.purple .general_read_more_1,
+body.purple .block_slogan p span,
+body.purple .lnk_w_arrow_general,
+body.purple .block_filter li a.active,
+body.purple .block_filter li a:hover,
+body.purple .block_general_pic_w_desc h3 a:hover,
+body.purple .lnk_w_arrow_1:hover,
+body.purple .block_testimonials_1 a,
+body.purple #footer .col_2 a,
+body.purple #footer .col_3 a,
+body.purple .table_type_3 .price td,
+body.purple .list_1 li a:hover,
+body.purple .list_2 li a:hover,
+body.purple .list_3 li a:hover,
+body.purple .list_4 li a:hover,
+body.purple .list_5 li a:hover,
+body.purple .list_6 li a:hover,
+body.purple .list_6 li a:hover span,
+body.purple .block_popular_posts .text .title a:hover,
+body.purple .page_archives .latest_post li a,
+body.purple .gall_latest_works a:hover .image-title,
+body.purple .sitemap_list h4,
+body.purple .sitemap_list h4 a,
+body.purple .block_portfolio_2c .block_two_columns h3 a:hover,
+body.purple .block_portfolio_3c .block_three_columns h3 a:hover,
+body.purple .block_portfolio_4c .block_four_columns h3 a:hover,
+body.purple .block_portfolio_side .block_two_columns h3 a:hover,
+body.purple .block_portfolio_side .block_three_columns h3 a:hover,
+body.purple .block_portfolio_2c a.readMore,
+body.purple .block_paginator a:hover,
+body.purple .block_paginator a.next:hover,
+body.purple .block_paginator a.prev:hover,
+body.purple .block_portfolio_3c a.readMore,
+body.purple .block_portfolio_4c a.readMore,
+body.purple .block_blog_type_5 .blog_info a:hover,
+body.purple .block_blog_type_5 .title .num_comments,
+body.purple .block_latest_tweets .tweet a,
+body.purple .block_blog_type_6 a.link_blue,
+body.purple .block_blog_type_6 .title .num_comments,
+body.purple .block_blog_type_6 .blog_info a:hover,
+body.purple .block_blog_type_1 .title .num_comments,
+body.purple .block_blog_type_1 a.link_blue,
+body.purple .block_blog_type_1 .blog_info a:hover,
+body.purple .block_blog_type_2 .title .num_comments,
+body.purple .block_blog_type_2 a.link_blue,
+body.purple .block_blog_type_2 .blog_info a:hover,
+body.purple .block_blog_type_3 .title .num_comments,
+body.purple .block_blog_type_3 .blog_info a:hover,
+body.purple .block_blog_type_4 .title .num_comments,
+body.purple .block_blog_type_4 .blog_info a:hover,
+body.purple .block_blog_post a.link_blue,
+body.purple .block_blog_post .post_info a:hover,
+body.purple .block_comments .title a,
+body.purple .block_comments .comments .comment .comment_content a,
+body.purple .block_our_team .position a,
+body.purple .block_testimonials_2 a,
+body.purple .block_contact_info a,
+body.purple .sign_popup h3,
+body#theme_dark.purple .block_general_pic_w_desc h3 a:hover,
+body#theme_light.purple .block_content_top .text_1 .text_slider_title span{color:#c52475;}
+body.purple .lnk_w_arrow_general:hover,
+body.purple .block_portfolio_2c a.readMore:hover,
+body.purple .block_portfolio_3c a.readMore:hover,
+body.purple .block_portfolio_4c a.readMore:hover{color:#d177a4;}
+body.purple .block_content_top .text_1 p {color:#f6f7f7;}
+body.purple .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.purple .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.purple .block_page_title .title {color:#ffffff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.purple .block_page_title .subtitle,
+body.purple .block_back a {color:#f0f5f7;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+/*____________________________________________/ sea_wave theme \_______________________________________________ */
+/* bg */
+body.sea_wave .wrapper {background-image:url(images/sea_wave/bg_main.jpg);}
+body.sea_wave.big_blue .wrapper {background-image:url(images/sea_wave/bg_main_269.jpg);}
+body.sea_wave.biggest_blue .wrapper {background-image:url(images/sea_wave/bg_main_285.jpg);}
+body.sea_wave.blue_3d .wrapper {background-image:url(images/sea_wave/bg_main_285.jpg);}
+body.sea_wave.thumbnail_bg .wrapper {background-image:url(images/sea_wave/thumbnail_bg.png);}
+body.sea_wave.brillant_blue .wrapper {background-image:url(images/sea_wave/bg_main_304.png);}
+body.sea_wave.accordation_page .wrapper {background-image:url(images/sea_wave/bg_main_300.jpg);}
+body.sea_wave #main_menu li.active > a,
+body.sea_wave #main_menu li:hover > a{background-image:url(images/sea_wave/arrow_main_menu.png);}
+body.sea_wave #title_top img{background-image:url(images/sea_wave/logo_top.png);}
+body.sea_wave #title_bottom a img{background-image:url(images/sea_wave/logo_bott.png);}
+/* ico */
+body.sea_wave #slider_side_nav a.activeSlide,
+body.sea_wave #recent_projects_pager a.selected,
+body.sea_wave .nivo-controlNav a.active,
+body.sea_wave #latest_projects_pager a.selected,
+body.sea_wave #recent_works_nav a.activeSlide {background:url(images/sea_wave/bg_ball_1_act.png) no-repeat 0 0 !important;}
+body.sea_wave .lnk_w_arrow_1:hover{background-image:url(images/sea_wave/arrow_3.png) !important;}
+body.sea_wave .lnk_w_arrow_general{background-image:url(images/sea_wave/arrow_general.png);}
+body.sea_wave .lnk_w_arrow_general:hover{background-image:url(images/sea_wave/arrow_general_act.png);}
+body.sea_wave #sB-Navi a.roundThumb.active,
+body.sea_wave #sB-Navi a.roundThumb.active:hover{background:url(images/sea_wave/ico_slider.png) no-repeat 0 0 !important;}
+body.sea_wave .list_5 li {background-image:url(images/sea_wave/list_5.png);}
+body.sea_wave .list_1 li a:hover {background-image:url(images/sea_wave/list_1_act.png);}
+body.sea_wave .list_2 li a:hover {background-image:url(images/sea_wave/list_2_act.png);}
+body.sea_wave .list_3 li a:hover {background-image:url(images/sea_wave/list_3_act.png);}
+body.sea_wave .list_4 li a:hover {background-image:url(images/sea_wave/list_4_act.png);}
+body.sea_wave .list_6 li a:hover,
+body.sea_wave .list_6 li a.active {background-image:url(images/sea_wave/arrow_blog_cat_act.png);}
+body.sea_wave .block_navi a.block_navi_prev {background-image:url(images/sea_wave/arrow_navi_prev.png);}
+body.sea_wave .block_navi a.block_navi_next {background-image:url(images/sea_wave/arrow_navi_next.png);}
+body.sea_wave .portfolio_detail_gallery a.pg-prevNav,
+body.sea_wave .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/sea_wave/nivo_detail.png) !important;}
+body.sea_wave ul.list_portfolio_link li a:hover,
+body.sea_wave ul.list_portfolio_link li.active a{background-image:url(images/sea_wave/portfolio_list_act.png);}
+/* buttons */
+body.sea_wave .general_button_1{background-image:url(images/sea_wave/bg_button_general.png);text-shadow: 0 -1px #49796d;}
+body.sea_wave .button_lnk.blue.def_link,
+body.sea_wave .button_lnk.blue.def_link span,
+body.sea_wave .button_lnk.blue.def_link input{background-image:url(../images/button_lime.png); text-shadow: 0 -1px #49796d;}
+/* color */
+body.sea_wave #main_menu li.active > a,
+body.sea_wave #main_menu li:hover > a,
+body.sea_wave .general_read_more_1,
+body.sea_wave .block_slogan p span,
+body.sea_wave .lnk_w_arrow_general,
+body.sea_wave .block_filter li a.active,
+body.sea_wave .block_filter li a:hover,
+body.sea_wave .block_general_pic_w_desc h3 a:hover,
+body.sea_wave .lnk_w_arrow_1:hover,
+body.sea_wave .block_testimonials_1 a,
+body.sea_wave #footer .col_2 a,
+body.sea_wave #footer .col_3 a,
+body.sea_wave .table_type_3 .price td,
+body.sea_wave .list_1 li a:hover,
+body.sea_wave .list_2 li a:hover,
+body.sea_wave .list_3 li a:hover,
+body.sea_wave .list_4 li a:hover,
+body.sea_wave .list_5 li a:hover,
+body.sea_wave .list_6 li a:hover,
+body.sea_wave .list_6 li a:hover span,
+body.sea_wave .block_popular_posts .text .title a:hover,
+body.sea_wave .page_archives .latest_post li a,
+body.sea_wave .gall_latest_works a:hover .image-title,
+body.sea_wave .sitemap_list h4,
+body.sea_wave .sitemap_list h4 a,
+body.sea_wave .block_portfolio_2c .block_two_columns h3 a:hover,
+body.sea_wave .block_portfolio_3c .block_three_columns h3 a:hover,
+body.sea_wave .block_portfolio_4c .block_four_columns h3 a:hover,
+body.sea_wave .block_portfolio_side .block_two_columns h3 a:hover,
+body.sea_wave .block_portfolio_side .block_three_columns h3 a:hover,
+body.sea_wave .block_portfolio_2c a.readMore,
+body.sea_wave .block_paginator a:hover,
+body.sea_wave .block_paginator a.next:hover,
+body.sea_wave .block_paginator a.prev:hover,
+body.sea_wave .block_portfolio_3c a.readMore,
+body.sea_wave .block_portfolio_4c a.readMore,
+body.sea_wave .block_blog_type_5 .blog_info a:hover,
+body.sea_wave .block_blog_type_5 .title .num_comments,
+body.sea_wave .block_latest_tweets .tweet a,
+body.sea_wave .block_blog_type_6 a.link_blue,
+body.sea_wave .block_blog_type_6 .title .num_comments,
+body.sea_wave .block_blog_type_6 .blog_info a:hover,
+body.sea_wave .block_blog_type_1 .title .num_comments,
+body.sea_wave .block_blog_type_1 a.link_blue,
+body.sea_wave .block_blog_type_1 .blog_info a:hover,
+body.sea_wave .block_blog_type_2 .title .num_comments,
+body.sea_wave .block_blog_type_2 a.link_blue,
+body.sea_wave .block_blog_type_2 .blog_info a:hover,
+body.sea_wave .block_blog_type_3 .title .num_comments,
+body.sea_wave .block_blog_type_3 .blog_info a:hover,
+body.sea_wave .block_blog_type_4 .title .num_comments,
+body.sea_wave .block_blog_type_4 .blog_info a:hover,
+body.sea_wave .block_blog_post a.link_blue,
+body.sea_wave .block_blog_post .post_info a:hover,
+body.sea_wave .block_comments .title a,
+body.sea_wave .block_comments .comments .comment .comment_content a,
+body.sea_wave .block_our_team .position a,
+body.sea_wave .block_testimonials_2 a,
+body.sea_wave .block_contact_info a,
+body.sea_wave .sign_popup h3,
+body#theme_dark.sea_wave .block_general_pic_w_desc h3 a:hover,
+body#theme_light.sea_wave .block_content_top .text_1 .text_slider_title span{color:#6aab9b;}
+body.sea_wave .lnk_w_arrow_general:hover,
+body.sea_wave .block_portfolio_2c a.readMore:hover,
+body.sea_wave .block_portfolio_3c a.readMore:hover,
+body.sea_wave .block_portfolio_4c a.readMore:hover{color:#5a9184;}
+body.sea_wave .block_content_top .text_1 p {color:#f6f7f7;}
+body.sea_wave .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.sea_wave .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.sea_wave .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.sea_wave .block_page_title .subtitle,
+body.sea_wave .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+
+/*____________________________________________/ dark_green theme \_______________________________________________ */
+/* bg */
+body.dark_green .wrapper {background-image:url(images/dark_green/bg_main.jpg);}
+body.dark_green.big_blue .wrapper {background-image:url(images/dark_green/bg_main_269.jpg);}
+body.dark_green.biggest_blue .wrapper {background-image:url(images/dark_green/bg_main_285.jpg);}
+body.dark_green.blue_3d .wrapper {background-image:url(images/dark_green/bg_main_285.jpg);}
+body.dark_green.thumbnail_bg .wrapper {background-image:url(images/dark_green/thumbnail_bg.png);}
+body.dark_green.brillant_blue .wrapper {background-image:url(images/dark_green/bg_main_304.png);}
+body.dark_green.accordation_page .wrapper {background-image:url(images/dark_green/bg_main_300.jpg);}
+body.dark_green #main_menu li.active > a,
+body.dark_green #main_menu li:hover > a{background-image:url(images/dark_green/arrow_main_menu.png);}
+body.dark_green #title_top img{background-image:url(images/dark_green/logo_top.png);}
+body.dark_green #title_bottom a img{background-image:url(images/dark_green/logo_bott.png);}
+/* ico */
+body.dark_green #slider_side_nav a.activeSlide,
+body.dark_green #recent_projects_pager a.selected,
+body.dark_green .nivo-controlNav a.active,
+body.dark_green #latest_projects_pager a.selected,
+body.dark_green #recent_works_nav a.activeSlide {background:url(images/dark_green/bg_ball_1_act.png) no-repeat 0 0 !important;}
+
+body.dark_green .lnk_w_arrow_1:hover{background-image:url(images/dark_green/arrow_3.png) !important;}
+body.dark_green .lnk_w_arrow_general{background-image:url(images/dark_green/arrow_general.png);}
+body.dark_green .lnk_w_arrow_general:hover{background-image:url(images/dark_green/arrow_general_act.png);}
+body.dark_green #sB-Navi a.roundThumb.active,
+body.dark_green #sB-Navi a.roundThumb.active:hover{background:url(images/dark_green/ico_slider.png) no-repeat 0 0 !important;}
+body.dark_green .list_5 li {background-image:url(images/dark_green/list_5.png);}
+body.dark_green .list_1 li a:hover {background-image:url(images/dark_green/list_1_act.png);}
+body.dark_green .list_2 li a:hover {background-image:url(images/dark_green/list_2_act.png);}
+body.dark_green .list_3 li a:hover {background-image:url(images/dark_green/list_3_act.png);}
+body.dark_green .list_4 li a:hover {background-image:url(images/dark_green/list_4_act.png);}
+body.dark_green .block_navi a.block_navi_prev {background-image:url(images/dark_green/arrow_navi_prev.png);}
+body.dark_green .block_navi a.block_navi_next {background-image:url(images/dark_green/arrow_navi_next.png);}
+body.dark_green .portfolio_detail_gallery a.pg-prevNav,
+body.dark_green .portfolio_detail_gallery a.pg-nextNav{background-image:url(images/dark_green/nivo_detail.png) !important;}
+body.dark_green ul.list_portfolio_link li a:hover,
+body.dark_green ul.list_portfolio_link li.active a{background-image:url(images/dark_green/portfolio_list_act.png);}
+/* buttons */
+body.dark_green .general_button_1{background-image:url(images/dark_green/bg_button_general.png);text-shadow: 0 -1px #5e7636;}
+body.dark_green .button_lnk.blue.def_link,
+body.dark_green .button_lnk.blue.def_link span,
+body.dark_green .button_lnk.blue.def_link input{background-image:url(../images/button_green.png); text-shadow: 0 -1px #5e7636;}
+/* color */
+body.dark_green #main_menu li.active > a,
+body.dark_green #main_menu li:hover > a,
+body.dark_green .general_read_more_1,
+body.dark_green .block_slogan p span,
+body.dark_green .lnk_w_arrow_general,
+body.dark_green .block_filter li a.active,
+body.dark_green .block_filter li a:hover,
+body.dark_green .block_general_pic_w_desc h3 a:hover,
+body.dark_green .lnk_w_arrow_1:hover,
+body.dark_green .block_testimonials_1 a,
+body.dark_green #footer .col_2 a,
+body.dark_green #footer .col_3 a,
+body.dark_green .table_type_3 .price td,
+body.dark_green .list_1 li a:hover,
+body.dark_green .list_2 li a:hover,
+body.dark_green .list_3 li a:hover,
+body.dark_green .list_4 li a:hover,
+body.dark_green .list_5 li a:hover,
+body.dark_green .list_6 li a:hover,
+body.dark_green .list_6 li a:hover span,
+body.dark_green .block_popular_posts .text .title a:hover,
+body.dark_green .page_archives .latest_post li a,
+body.dark_green .gall_latest_works a:hover .image-title,
+body.dark_green .sitemap_list h4,
+body.dark_green .sitemap_list h4 a,
+body.dark_green .block_portfolio_2c .block_two_columns h3 a:hover,
+body.dark_green .block_portfolio_3c .block_three_columns h3 a:hover,
+body.dark_green .block_portfolio_4c .block_four_columns h3 a:hover,
+body.dark_green .block_portfolio_side .block_two_columns h3 a:hover,
+body.dark_green .block_portfolio_side .block_three_columns h3 a:hover,
+body.dark_green .block_portfolio_2c a.readMore,
+body.dark_green .block_paginator a:hover,
+body.dark_green .block_paginator a.next:hover,
+body.dark_green .block_paginator a.prev:hover,
+body.dark_green .block_portfolio_3c a.readMore,
+body.dark_green .block_portfolio_4c a.readMore,
+body.dark_green .block_blog_type_5 .blog_info a:hover,
+body.dark_green .block_blog_type_5 .title .num_comments,
+body.dark_green .block_latest_tweets .tweet a,
+body.dark_green .block_blog_type_6 a.link_blue,
+body.dark_green .block_blog_type_6 .title .num_comments,
+body.dark_green .block_blog_type_6 .blog_info a:hover,
+body.dark_green .block_blog_type_1 .title .num_comments,
+body.dark_green .block_blog_type_1 a.link_blue,
+body.dark_green .block_blog_type_1 .blog_info a:hover,
+body.dark_green .block_blog_type_2 .title .num_comments,
+body.dark_green .block_blog_type_2 a.link_blue,
+body.dark_green .block_blog_type_2 .blog_info a:hover,
+body.dark_green .block_blog_type_3 .title .num_comments,
+body.dark_green .block_blog_type_3 .blog_info a:hover,
+body.dark_green .block_blog_type_4 .title .num_comments,
+body.dark_green .block_blog_type_4 .blog_info a:hover,
+body.dark_green .block_blog_post a.link_blue,
+body.dark_green .block_blog_post .post_info a:hover,
+body.dark_green .block_comments .title a,
+body.dark_green .block_comments .comments .comment .comment_content a,
+body.dark_green .block_our_team .position a,
+body.dark_green .block_testimonials_2 a,
+body.dark_green .block_contact_info a,
+body.dark_green .sign_popup h3,
+body#theme_dark.dark_green .block_general_pic_w_desc h3 a:hover,
+body#theme_light.dark_green .block_content_top .text_1 .text_slider_title span{color:#569307;}
+
+body.dark_green .lnk_w_arrow_general:hover,
+body.dark_green .block_portfolio_2c a.readMore:hover,
+body.dark_green .block_portfolio_3c a.readMore:hover,
+body.dark_green .block_portfolio_4c a.readMore:hover{color:#457407;}
+body.dark_green .block_content_top .text_1 p {color:#f6f7f7;}
+body.dark_green .block_content_top .text_1 .text_slider_title {color:#f6f6f6; text-shadow:none;}
+body.dark_green .block_content_top .text_1 .text_slider_title span {color:#353535;}
+body.dark_green .block_page_title .title {color:#fff;text-shadow:0px 1px 2px rgba(0,0,0,0.31);}
+body.dark_green .block_page_title .subtitle,
+body.dark_green .block_back a {color:#fff;text-shadow:0px 1px 1px rgba(0,0,0,0.18);}
+
+
+/*_________________________________________________________________________________________________________ */
+
+/*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ STRECHED / BOXES _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+body.boxed .wrapper{max-width:1030px; margin:0 auto; min-width:1000px; background-color:#fff !important;}
+body.boxed .pattern{position:fixed; width:100%; height:100%; background:url(images/pattern/pattern_1.png) repeat center 0;}
+body.boxed#theme_light .pattern{background:url(images/pattern/pattern_light.jpg) repeat center 0;}
+body.boxed#theme_dark .pattern{background:url(images/pattern/pattern_1_d.png) repeat center 0;}
+
+body.boxed .main_bg{position:fixed; width:100%;  height:100%; background:url(images/pattern/shadow_m.png) repeat-y center 0;}
+@media all and (-webkit-min-device-pixel-ratio:0) {body.boxed .main_bg{left:-1px;}}
+
+body.boxed.wide_cells .pattern {background-image:url(images/pattern/pattern_1.png) !important;}
+body.boxed.wide_diagonal_cells .pattern {background-image:url(images/pattern/pattern_2.png) !important;}
+body.boxed.huge_cells .pattern {background-image:url(images/pattern/pattern_3.png) !important;}
+body.boxed.diagonal_cells .pattern {background-image:url(images/pattern/pattern_4.png) !important;}
+body.boxed.vertical_lines .pattern {background-image:url(images/pattern/pattern_5.png) !important;}
+body.boxed.cells .pattern {background-image:url(images/pattern/pattern_6.png) !important;}
+body.boxed.wood .pattern {background-image:url(images/pattern/pattern_light.jpg) !important;}
+
+body#theme_dark.boxed.wide_cells .pattern {background-image:url(images/pattern/pattern_1_d.png) !important;}
+body#theme_dark.boxed.wide_diagonal_cells .pattern {background-image:url(images/pattern/pattern_2_d.png) !important;}
+body#theme_dark.boxed.huge_cells .pattern {background-image:url(images/pattern/pattern_3_d.png) !important;}
+body#theme_dark.boxed.diagonal_cells .pattern {background-image:url(images/pattern/pattern_4_d.png) !important;}
+body#theme_dark.boxed.vertical_lines .pattern {background-image:url(images/pattern/pattern_5_d.png) !important;}
+body#theme_dark.boxed.cells .pattern {background-image:url(images/pattern/pattern_6_d.png) !important;}
+body#theme_dark.boxed.wood .pattern {background-image:url(images/pattern/pattern_6_d.png) !important;}
+body#theme_dark.boxed .theme_settings_container li a#wood{display:none;}
+body#theme_dark.boxed .wrapper{background-color:#333333 !important;}
+
+/*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ THEMES FONTS_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.font_arial h2,
+.font_arial .block_portfolio_side h1,
+.font_arial .block_portfolio_side h1 a,
+.font_arial .block_general_text h2,
+.font_arial .block_testimonials_1 h2 ,
+.font_arial .block_side_lnks h1,
+.font_arial .block_popular_posts h1,
+.font_arial .block_resent_works h1,
+.font_arial .block_tags h1,
+.font_arial .block_latest_tweets h1,
+.font_arial .block_blog_type_1 .title h1,
+.font_arial .block_blog_type_1 .title h1 a,
+.font_arial .block_blog_type_2 .title h1,
+.font_arial .block_blog_type_2 .title h1 a,
+.font_arial .block_blog_type_5 .title h1,
+.font_arial .block_blog_type_5 .title h1 a,
+.font_arial .block_blog_type_6 .title h1,
+.font_arial .block_blog_type_6 .title h1 a,
+.font_arial .table_type_3 th.active,
+.font_arial .table_type_3 .price td,
+.font_arial .service_item .title h2,
+.font_arial .service_item .title h2 a,
+.font_arial .page_404 .title h2,
+.font_arial .block_typography h1,
+.font_arial .block_typography h1 a,
+.font_arial .block_portfolio_side h1,
+.font_arial .block_portfolio_side h1 a{font-family:Arial, Helvetica, sans-serif;}
+
+.font_droidsans h2,
+.font_droidsans .block_portfolio_side h1,
+.font_droidsans .block_portfolio_side h1 a,
+.font_droidsans .block_general_text h2,
+.font_droidsans .block_testimonials_1 h2 ,
+.font_droidsans .block_side_lnks h1,
+.font_droidsans .block_popular_posts h1,
+.font_droidsans .block_resent_works h1,
+.font_droidsans .block_tags h1,
+.font_droidsans .block_latest_tweets h1,
+.font_droidsans .block_blog_type_1 .title h1,
+.font_droidsans .block_blog_type_1 .title h1 a,
+.font_droidsans .block_blog_type_2 .title h1,
+.font_droidsans .block_blog_type_2 .title h1 a,
+.font_droidsans .block_blog_type_5 .title h1,
+.font_droidsans .block_blog_type_5 .title h1 a,
+.font_droidsans .block_blog_type_6 .title h1,
+.font_droidsans .block_blog_type_6 .title h1 a,
+.font_droidsans .table_type_3 th.active,
+.font_droidsans .table_type_3 .price td,
+.font_droidsans .service_item .title h2,
+.font_droidsans .service_item .title h2 a,
+.font_droidsans .page_404 .title h2,
+.font_droidsans .block_typography h1,
+.font_droidsans .block_typography h1 a,
+.font_droidsans .block_portfolio_side h1,
+.font_droidsans .block_portfolio_side h1 a{font-family: 'Droid Sans', sans-serif;}
+
+.font_oswald h2,
+.font_oswald .block_portfolio_side h1,
+.font_oswald .block_portfolio_side h1 a,
+.font_oswald .block_general_text h2,
+.font_oswald .block_testimonials_1 h2 ,
+.font_oswald .block_side_lnks h1,
+.font_oswald .block_popular_posts h1,
+.font_oswald .block_resent_works h1,
+.font_oswald .block_tags h1,
+.font_oswald .block_latest_tweets h1,
+.font_oswald .block_blog_type_1 .title h1,
+.font_oswald .block_blog_type_1 .title h1 a,
+.font_oswald .block_blog_type_2 .title h1,
+.font_oswald .block_blog_type_2 .title h1 a,
+.font_oswald .block_blog_type_5 .title h1,
+.font_oswald .block_blog_type_5 .title h1 a,
+.font_oswald .block_blog_type_6 .title h1,
+.font_oswald .block_blog_type_6 .title h1 a,
+.font_oswald .table_type_3 th.active,
+.font_oswald .table_type_3 .price td,
+.font_oswald .service_item .title h2,
+.font_oswald .service_item .title h2 a,
+.font_oswald .page_404 .title h2,
+.font_oswald .block_typography h1,
+.font_oswald .block_typography h1 a,
+.font_oswald .block_portfolio_side h1,
+.font_oswald .block_portfolio_side h1 a{font-family: 'Oswald', sans-serif; text-transform:uppercase !important; font-size:15px !important;}
+
+.font_ptsansnarrow h2,
+.font_ptsansnarrow .block_portfolio_side h1,
+.font_ptsansnarrow .block_portfolio_side h1 a,
+.font_ptsansnarrow .block_general_text h2,
+.font_ptsansnarrow .block_testimonials_1 h2 ,
+.font_ptsansnarrow .block_side_lnks h1,
+.font_ptsansnarrow .block_popular_posts h1,
+.font_ptsansnarrow .block_resent_works h1,
+.font_ptsansnarrow .block_tags h1,
+.font_ptsansnarrow .block_latest_tweets h1,
+.font_ptsansnarrow .block_blog_type_1 .title h1,
+.font_ptsansnarrow .block_blog_type_1 .title h1 a,
+.font_ptsansnarrow .block_blog_type_2 .title h1,
+.font_ptsansnarrow .block_blog_type_2 .title h1 a,
+.font_ptsansnarrow .block_blog_type_5 .title h1,
+.font_ptsansnarrow .block_blog_type_5 .title h1 a,
+.font_ptsansnarrow .block_blog_type_6 .title h1,
+.font_ptsansnarrow .block_blog_type_6 .title h1 a,
+.font_ptsansnarrow .table_type_3 th.active,
+.font_ptsansnarrow .table_type_3 .price td,
+.font_ptsansnarrow .service_item .title h2,
+.font_ptsansnarrow .service_item .title h2 a,
+.font_ptsansnarrow .page_404 .title h2,
+.font_ptsansnarrow .block_typography h1,
+.font_ptsansnarrow .block_typography h1 a,
+.font_ptsansnarrow .block_portfolio_side h1,
+.font_ptsansnarrow .block_portfolio_side h1 a{font-family: 'PT Sans Narrow', sans-serif; font-weight:700 !important; text-transform:uppercase !important;}
+
+.font_opensanssemi h2,
+.font_opensanssemi .block_portfolio_side h1,
+.font_opensanssemi .block_portfolio_side h1 a,
+.font_opensanssemi .block_general_text h2,
+.font_opensanssemi .block_testimonials_1 h2 ,
+.font_opensanssemi .block_side_lnks h1,
+.font_opensanssemi .block_popular_posts h1,
+.font_opensanssemi .block_resent_works h1,
+.font_opensanssemi .block_tags h1,
+.font_opensanssemi .block_latest_tweets h1,
+.font_opensanssemi .block_blog_type_1 .title h1,
+.font_opensanssemi .block_blog_type_1 .title h1 a,
+.font_opensanssemi .block_blog_type_2 .title h1,
+.font_opensanssemi .block_blog_type_2 .title h1 a,
+.font_opensanssemi .block_blog_type_5 .title h1,
+.font_opensanssemi .block_blog_type_5 .title h1 a,
+.font_opensanssemi .block_blog_type_6 .title h1,
+.font_opensanssemi .block_blog_type_6 .title h1 a,
+.font_opensanssemi .table_type_3 th.active,
+.font_opensanssemi .table_type_3 .price td,
+.font_opensanssemi .service_item .title h2,
+.font_opensanssemi .service_item .title h2 a,
+.font_opensanssemi .page_404 .title h2,
+.font_opensanssemi .block_typography h1,
+.font_opensanssemi .block_typography h1 a,
+.font_opensanssemi .block_portfolio_side h1,
+.font_opensanssemi .block_portfolio_side h1 a{font-family: 'Open Sans', sans-serif; font-weight:600;}
+
+
+
+
+/*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ MAIN THEMES _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+/*____________________________________________/ clean [default] theme \_____________________________________________ */
+body#theme_clean{}
+
+/*____________________________________________/ light theme \_______________________________________________ */
+body#theme_light .wrapper {background-image:url(images/light/bg_main.jpg);}
+body#theme_light.big_blue .wrapper {background-image:url(images/light/bg_main_269.jpg);}
+body#theme_light.biggest_blue .wrapper {background-image:url(images/light/bg_main_285.jpg);}
+body#theme_light.blue_3d .wrapper {background-image:url(images/light/bg_main_285.jpg);}
+body#theme_light.thumbnail_bg .wrapper {background-image:url(images/light/thumbnail_bg.png);}
+body#theme_light.brillant_blue .wrapper {background-image:url(images/light/bg_main_304.png);}
+body#theme_light.accordation_page .wrapper {background-image:url(images/light/bg_main_300.jpg);}
+body#theme_light #main_menu li.active > a, 
+body#theme_light #main_menu li:hover > a{background-image:url(images/light/arrow_main_menu.png);}
+body#theme_light .block_content_top {background:none;}
+body#theme_light .block_content_top .text_1 p {color:#808080; text-shadow:none;}
+body#theme_light .block_content_top .text_1 .text_slider_title {color:#464545; text-shadow:none;}
+
+body#theme_light .block_page_title .title {color:#191919; text-shadow:none;}
+body#theme_light .block_page_title .subtitle {color:#b3b3b3;text-shadow:0px 1px 0 rgba(255,255,255,0.75);}
+body#theme_light .block_back a{color:#b8b4b4;text-shadow:0px 1px 0 rgba(255,255,255,0.75)}
+
+/*____________________________________________/ dark theme \_____________________________________________ */
+body#theme_dark .block_filter li a {color:#9c9c9c;}
+body#theme_dark{background-color:#333333;}
+body#theme_dark #header{background-image:url(images/dark/bg_header.jpg);}
+body#theme_dark #title_top a{background:url(images/dark/logo_top_left.png) no-repeat 0 0;}
+body#theme_dark #main_menu li > ul > li {background-image:url(images/dark/bg_main_submenu_mid.png);}
+body#theme_dark #main_menu li > ul > li.top{background-image:url(images/dark/bg_main_submenu_top.png)}
+body#theme_dark #main_menu li {background-image:url(images/dark/line_main_menu.png);}
+
+body#theme_dark #main_menu li > ul {background-image:url(images/dark/bg_main_submenu_bottom.png);}
+
+body#theme_dark .block_typography h1,
+body#theme_dark .block_typography h2,
+body#theme_dark .block_typography h3,
+body#theme_dark .block_typography h4,
+body#theme_dark .block_typography h5,
+body#theme_dark .block_typography h1 a,
+body#theme_dark .block_typography h2 a,
+body#theme_dark .block_typography h3 a,
+body#theme_dark .block_typography h4 a,
+body#theme_dark .block_typography h5 a,
+body#theme_dark .block_portfolio_side h1,
+body#theme_dark .block_portfolio_side h2,
+body#theme_dark .block_portfolio_side h3,
+body#theme_dark .block_portfolio_side h4,
+body#theme_dark .block_portfolio_side h5,
+body#theme_dark .block_portfolio_side h1 a,
+body#theme_dark .block_portfolio_side h2 a,
+body#theme_dark .block_portfolio_side h3 a,
+body#theme_dark .block_portfolio_side h4 a,
+body#theme_dark .block_portfolio_side h5 a,
+body#theme_dark .dropcap_3 p,
+body#theme_dark .block_contact_info b ,
+body#theme_dark .block_filter .filter_text,
+body#theme_dark .block_portfolio_3c .block_three_columns h3,
+body#theme_dark .block_portfolio_3c .block_three_columns h3 a,
+body#theme_dark .block_portfolio_4c .block_four_columns h3,
+body#theme_dark .block_portfolio_4c .block_four_columns h3 a,
+body#theme_dark .block_portfolio_2c .block_two_columns h3,
+body#theme_dark .block_portfolio_2c .block_two_columns h3 a,
+body#theme_dark h2,
+body#theme_dark h3,
+body#theme_dark .block_our_team .name a,
+body#theme_dark .block_blog_post .post_tags p b,
+body#theme_dark .block_comments .comments .comment .comment_content .name a  {color:#c7c7c7;}
+
+
+body#theme_dark #main_menu li a,
+body#theme_dark .block_slogan p,
+body#theme_dark .block_buy .text p{color:#c2c2c2;}
+
+
+body#theme_dark #main_menu li li a{color: #949494 !important;}
+body#theme_dark #main_menu li li a:hover{color: #bfbfbf !important;}
+body#theme_dark p{color:#969696;}
+	/* dark blue */
+body#theme_dark.dark_blue  #main_menu li.active a,
+body#theme_dark.dark_blue #main_menu li a:hover,
+body#theme_dark.dark_blue .block_typography h1 a:hover,
+body#theme_dark.dark_blue .block_typography h2 a:hover,
+body#theme_dark.dark_blue .block_typography h3 a:hover,
+body#theme_dark.dark_blue .block_typography h4 a:hover,
+body#theme_dark.dark_blue .block_typography h5 a:hover,
+body#theme_dark.dark_blue .block_portfolio_side h1 a:hover,
+body#theme_dark.dark_blue .block_portfolio_side h2 a:hover,
+body#theme_dark.dark_blue .block_portfolio_side h3 a:hover,
+body#theme_dark.dark_blue .block_portfolio_side h4 a:hover,
+body#theme_dark.dark_blue .block_portfolio_side h5 a:hover,
+body#theme_dark.dark_blue .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.dark_blue .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.dark_blue .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.dark_blue .block_typography h4,
+body#theme_dark.dark_blue .sign_popup h3,
+body#theme_dark.dark_blue .block_filter li a:hover, 
+body#theme_dark.dark_blue .block_filter li a.active{color:#658f99;}
+body#theme_dark.dark_blue #main_menu li li a:hover{color:#658f99 !important;}
+	/* blue */
+body#theme_dark.blue #main_menu li.active a,
+body#theme_dark.blue #main_menu li a:hover,
+body#theme_dark.blue .block_typography h1 a:hover,
+body#theme_dark.blue .block_typography h2 a:hover,
+body#theme_dark.blue .block_typography h3 a:hover,
+body#theme_dark.blue .block_typography h4 a:hover,
+body#theme_dark.blue .block_typography h5 a:hover,
+body#theme_dark.blue .block_portfolio_side h1 a:hover,
+body#theme_dark.blue .block_portfolio_side h2 a:hover,
+body#theme_dark.blue .block_portfolio_side h3 a:hover,
+body#theme_dark.blue .block_portfolio_side h4 a:hover,
+body#theme_dark.blue .block_portfolio_side h5 a:hover,
+body#theme_dark.blue .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.blue .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.blue .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.blue .block_typography h4,
+body#theme_dark.blue .sign_popup h3,
+body#theme_dark.blue .block_filter li a:hover, 
+body#theme_dark.blue .block_filter li a.active{color:#0589C6;}
+body#theme_dark.blue #main_menu li li a:hover{color:#0589C6 !important;}
+	/* green */
+body#theme_dark.green #main_menu li.active a,
+body#theme_dark.green #main_menu li a:hover,
+body#theme_dark.green .block_typography h1 a:hover,
+body#theme_dark.green .block_typography h2 a:hover,
+body#theme_dark.green .block_typography h3 a:hover,
+body#theme_dark.green .block_typography h4 a:hover,
+body#theme_dark.green .block_typography h5 a:hover,
+body#theme_dark.green .block_portfolio_side h1 a:hover,
+body#theme_dark.green .block_portfolio_side h2 a:hover,
+body#theme_dark.green .block_portfolio_side h3 a:hover,
+body#theme_dark.green .block_portfolio_side h4 a:hover,
+body#theme_dark.green .block_portfolio_side h5 a:hover,
+body#theme_dark.green .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.green .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.green .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.green .block_typography h4,
+body#theme_dark.green .sign_popup h3,
+body#theme_dark.green .block_filter li a:hover, 
+body#theme_dark.green .block_filter li a.active{color:#8aad50;}
+body#theme_dark.green #main_menu li li a:hover{color:#8aad50 !important;}
+	/* light_green*/
+body#theme_dark.light_green #main_menu li.active a,
+body#theme_dark.light_green #main_menu li a:hover,
+body#theme_dark.light_green .block_typography h1 a:hover,
+body#theme_dark.light_green .block_typography h2 a:hover,
+body#theme_dark.light_green .block_typography h3 a:hover,
+body#theme_dark.light_green .block_typography h4 a:hover,
+body#theme_dark.light_green .block_typography h5 a:hover,
+body#theme_dark.light_green .block_portfolio_side h1 a:hover,
+body#theme_dark.light_green .block_portfolio_side h2 a:hover,
+body#theme_dark.light_green .block_portfolio_side h3 a:hover,
+body#theme_dark.light_green .block_portfolio_side h4 a:hover,
+body#theme_dark.light_green .block_portfolio_side h5 a:hover,
+body#theme_dark.light_green .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.light_green .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.light_green .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.light_green .block_typography h4,
+body#theme_dark.light_green .sign_popup h3,
+body#theme_dark.light_green .block_filter li a:hover, 
+body#theme_dark.light_green .block_filter li a.active{color:#569307;}
+body#theme_dark.light_green #main_menu li li a:hover{color:#569307 !important;}
+	/* light red */
+body#theme_dark.dark_red #main_menu li.active a,
+body#theme_dark.dark_red #main_menu li a:hover,
+body#theme_dark.dark_red .block_typography h1 a:hover,
+body#theme_dark.dark_red .block_typography h2 a:hover,
+body#theme_dark.dark_red .block_typography h3 a:hover,
+body#theme_dark.dark_red .block_typography h4 a:hover,
+body#theme_dark.dark_red .block_typography h5 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h1 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h2 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h4 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h5 a:hover,
+body#theme_dark.dark_red .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.dark_red .block_typography h4,
+body#theme_dark.dark_red .sign_popup h3,
+body#theme_dark.dark_red .block_filter li a:hover, 
+body#theme_dark.dark_red .block_filter li a.active{color:#931b1c;}
+body#theme_dark.dark_red #main_menu li li a:hover{color:#931b1c !important;}
+	/* orange */
+body#theme_dark.orange #main_menu li.active a,
+body#theme_dark.orange #main_menu li a:hover,
+body#theme_dark.orange .block_typography h1 a:hover,
+body#theme_dark.orange .block_typography h2 a:hover,
+body#theme_dark.orange .block_typography h3 a:hover,
+body#theme_dark.orange .block_typography h4 a:hover,
+body#theme_dark.orange .block_typography h5 a:hover,
+body#theme_dark.orange .block_portfolio_side h1 a:hover,
+body#theme_dark.orange .block_portfolio_side h2 a:hover,
+body#theme_dark.orange .block_portfolio_side h3 a:hover,
+body#theme_dark.orange .block_portfolio_side h4 a:hover,
+body#theme_dark.orange .block_portfolio_side h5 a:hover,
+body#theme_dark.orange .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.orange .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.orange .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.orange .block_typography h4,
+body#theme_dark.orange .sign_popup h3,
+body#theme_dark.orange .block_filter li a:hover, 
+body#theme_dark.orange .block_filter li a.active{color:#f78201;}
+body#theme_dark.orange #main_menu li li a:hover{color:#f78201 !important;}
+	/* red */
+body#theme_dark.red #main_menu li.active a,
+body#theme_dark.red #main_menu li a:hover,
+body#theme_dark.red .block_typography h1 a:hover,
+body#theme_dark.red .block_typography h2 a:hover,
+body#theme_dark.red .block_typography h3 a:hover,
+body#theme_dark.red .block_typography h4 a:hover,
+body#theme_dark.red .block_typography h5 a:hover,
+body#theme_dark.red .block_portfolio_side h1 a:hover,
+body#theme_dark.red .block_portfolio_side h2 a:hover,
+body#theme_dark.red .block_portfolio_side h3 a:hover,
+body#theme_dark.red .block_portfolio_side h4 a:hover,
+body#theme_dark.red .block_portfolio_side h5 a:hover,
+body#theme_dark.red .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.red .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.red .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.red .block_typography h4,
+body#theme_dark.red .sign_popup h3,
+body#theme_dark.red .block_filter li a:hover, 
+body#theme_dark.red .block_filter li a.active{color:#db4632;}
+body#theme_dark.red #main_menu li li a:hover{color:#db4632 !important;}
+	/* purple */
+body#theme_dark.purple #main_menu li.active a,
+body#theme_dark.purple #main_menu li a:hover,
+body#theme_dark.purple .block_typography h1 a:hover,
+body#theme_dark.purple .block_typography h2 a:hover,
+body#theme_dark.purple .block_typography h3 a:hover,
+body#theme_dark.purple .block_typography h4 a:hover,
+body#theme_dark.purple .block_typography h5 a:hover,
+body#theme_dark.purple .block_portfolio_side h1 a:hover,
+body#theme_dark.purple .block_portfolio_side h2 a:hover,
+body#theme_dark.purple .block_portfolio_side h3 a:hover,
+body#theme_dark.purple .block_portfolio_side h4 a:hover,
+body#theme_dark.purple .block_portfolio_side h5 a:hover,
+body#theme_dark.purple .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.purple .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.purple .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.purple .block_typography h4,
+body#theme_dark.purple .sign_popup h3,
+body#theme_dark.purple .block_filter li a:hover, 
+body#theme_dark.purple .block_filter li a.active{color:#c52475;}
+body#theme_dark.purple #main_menu li li a:hover{color:#c52475 !important;}
+	/* sea wave */
+body#theme_dark.sea_wave #main_menu li.active a,
+body#theme_dark.sea_wave #main_menu li a:hover,
+body#theme_dark.sea_wave .block_typography h1 a:hover,
+body#theme_dark.sea_wave .block_typography h2 a:hover,
+body#theme_dark.sea_wave .block_typography h3 a:hover,
+body#theme_dark.sea_wave .block_typography h4 a:hover,
+body#theme_dark.sea_wave .block_typography h5 a:hover,
+body#theme_dark.sea_wave .block_portfolio_side h1 a:hover,
+body#theme_dark.sea_wave .block_portfolio_side h2 a:hover,
+body#theme_dark.sea_wave .block_portfolio_side h3 a:hover,
+body#theme_dark.sea_wave .block_portfolio_side h4 a:hover,
+body#theme_dark.sea_wave .block_portfolio_side h5 a:hover,
+body#theme_dark.sea_wave .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.sea_wave .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.sea_wave .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.sea_wave .block_typography h4,
+body#theme_dark.sea_wave .sign_popup h3,
+body#theme_dark.sea_wave .block_filter li a:hover, 
+body#theme_dark.sea_wave .block_filter li a.active{color:#6aab9b;}
+body#theme_dark.sea_wave #main_menu li li a:hover{color:#6aab9b !important;}
+	/* dark green */
+body#theme_dark.dark_green #main_menu li.active a,
+body#theme_dark.dark_green #main_menu li a:hover,
+body#theme_dark.dark_green .block_typography h1 a:hover,
+body#theme_dark.dark_green .block_typography h2 a:hover,
+body#theme_dark.dark_green .block_typography h3 a:hover,
+body#theme_dark.dark_green .block_typography h4 a:hover,
+body#theme_dark.dark_green .block_typography h5 a:hover,
+body#theme_dark.dark_green .block_portfolio_side h1 a:hover,
+body#theme_dark.dark_green .block_portfolio_side h2 a:hover,
+body#theme_dark.dark_green .block_portfolio_side h3 a:hover,
+body#theme_dark.dark_green .block_portfolio_side h4 a:hover,
+body#theme_dark.dark_green .block_portfolio_side h5 a:hover,
+body#theme_dark.dark_green .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.dark_green .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.dark_green .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.dark_green .block_typography h4,
+body#theme_dark.dark_green .sign_popup h3,
+body#theme_dark.dark_green .block_filter li a:hover, 
+body#theme_dark.dark_green .block_filter li a.active{color:#569307;}
+body#theme_dark.dark_green #main_menu li li a:hover{color:#569307 !important;}
+	/* dark red */
+body#theme_dark.dark_red #main_menu li.active a,
+body#theme_dark.dark_red #main_menu li a:hover,
+body#theme_dark.dark_red .block_typography h1 a:hover,
+body#theme_dark.dark_red .block_typography h2 a:hover,
+body#theme_dark.dark_red .block_typography h3 a:hover,
+body#theme_dark.dark_red .block_typography h4 a:hover,
+body#theme_dark.dark_red .block_typography h5 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h1 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h2 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h4 a:hover,
+body#theme_dark.dark_red .block_portfolio_side h5 a:hover,
+body#theme_dark.dark_red .block_portfolio_3c .block_three_columns h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_4c .block_four_columns h3 a:hover,
+body#theme_dark.dark_red .block_portfolio_2c .block_two_columns h3 a:hover,
+body#theme_dark.dark_red .block_typography h4,
+body#theme_dark.dark_red .sign_popup h3,
+body#theme_dark.dark_red .block_filter li a:hover, 
+body#theme_dark.dark_red .block_filter li a.active{color:#931b1c;}
+body#theme_dark.dark_red #main_menu li li a:hover{color:#931b1c !important;}
+
+body#theme_dark .block_slider{background-image:url(images/dark/bg_cent.png);}
+body#theme_dark .corns{background-image:url(images/dark/slider.png);}
+body#theme_dark #sB-Navi{background-color:#4A4A4A;}
+body#theme_dark #sB-Navi-help a{border-color:#4A4A4A;}
+body#theme_dark #sB-Navi-help{background-image:url(images/dark/navi.png);}
+body#theme_dark .line_1{background-image:url(images/dark/dotts.gif);}
+body#theme_dark .separated_border_left,
+body#theme_dark .separated_border_left_18{border-left-color:#4f4f4f;}
+body#theme_dark .block_filter li{background-image:url(images/dark/line_filter.gif);}
+body#theme_dark .block_filter li:first-child,
+body#theme_dark #main_menu li:first-child{background:none;}
+body#theme_dark #recent_projects_pager a,
+body#theme_dark .nivo-controlNav a,
+body#theme_dark.blue #latest_projects_pager a,
+body#theme_dark #recent_works_nav a,
+body#theme_dark #slider_side_nav a,
+body#theme_dark #latest_projects_pager a {background-image:url(images/dark/bg_ball_2.png); background-position:0 0 !important;}
+
+
+body#theme_dark.blue #slider_side_nav a.activeSlide,
+body#theme_dark.blue #recent_projects_pager a.selected,
+body#theme_dark.blue .nivo-controlNav a.active,
+body#theme_dark.blue #latest_projects_pager a.selected,
+body#theme_dark.blue #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_blue.png) !important;}
+
+body#theme_dark.dark_blue #slider_side_nav a.activeSlide,
+body#theme_dark.dark_blue #recent_projects_pager a.selected,
+body#theme_dark.dark_blue .nivo-controlNav a.active,
+body#theme_dark.dark_blue #latest_projects_pager a.selected,
+body#theme_dark.dark_blue #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_dark_blue.png) !important;}
+
+body#theme_dark.green #slider_side_nav a.activeSlide,
+body#theme_dark.green #recent_projects_pager a.selected,
+body#theme_dark.green .nivo-controlNav a.active,
+body#theme_dark.green #latest_projects_pager a.selected,
+body#theme_dark.green #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_green.png) !important;}
+
+body#theme_dark.light_green #slider_side_nav a.activeSlide,
+body#theme_dark.light_green #recent_projects_pager a.selected,
+body#theme_dark.light_green .nivo-controlNav a.active,
+body#theme_dark.light_green #latest_projects_pager a.selected,
+body#theme_dark.light_green #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_light_green.png) !important;}
+
+body#theme_dark.red #slider_side_nav a.activeSlide,
+body#theme_dark.red #recent_projects_pager a.selected,
+body#theme_dark.red .nivo-controlNav a.active,
+body#theme_dark.red #latest_projects_pager a.selected,
+body#theme_dark.red #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_red.png) !important;}
+
+body#theme_dark.dark_red #slider_side_nav a.activeSlide,
+body#theme_dark.dark_red #recent_projects_pager a.selected,
+body#theme_dark.dark_red .nivo-controlNav a.active,
+body#theme_dark.dark_red #latest_projects_pager a.selected,
+body#theme_dark.dark_red #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_dark_red.png) !important;}
+
+body#theme_dark.orange #slider_side_nav a.activeSlide,
+body#theme_dark.orange #recent_projects_pager a.selected,
+body#theme_dark.orange .nivo-controlNav a.active,
+body#theme_dark.orange #latest_projects_pager a.selected,
+body#theme_dark.orange #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_orange.png) !important;}
+
+body#theme_dark.purple #slider_side_nav a.activeSlide,
+body#theme_dark.purple #recent_projects_pager a.selected,
+body#theme_dark.purple .nivo-controlNav a.active,
+body#theme_dark.purple #latest_projects_pager a.selected,
+body#theme_dark.purple #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_violet.png) !important;}
+
+body#theme_dark.sea_wave #slider_side_nav a.activeSlide,
+body#theme_dark.sea_wave #recent_projects_pager a.selected,
+body#theme_dark.sea_wave .nivo-controlNav a.active,
+body#theme_dark.sea_wave #latest_projects_pager a.selected,
+body#theme_dark.sea_wave #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_sea_wave.png) !important;}
+
+body#theme_dark.dark_green #slider_side_nav a.activeSlide,
+body#theme_dark.dark_green #recent_projects_pager a.selected,
+body#theme_dark.dark_green .nivo-controlNav a.active,
+body#theme_dark.dark_green #latest_projects_pager a.selected,
+body#theme_dark.dark_green #recent_works_nav a.activeSlide{background-image:url(images/dark/bg_ball_1_dark_green.png) !important;}
+
+
+
+
+body#theme_dark .block_general_pic{border-color:#383838 !important; background:#2e2e2e !important;}
+body#theme_dark .description a img
+,body#theme_dark .text_w_space a img{height:0; width:0; padding:7px 0 0 7px; background:url(images/dark/arrow_more.png) no-repeat 0 0;}
+body#theme_dark .line_3{background-color:#454545;}
+body#theme_dark .lnk_w_arrow_1{background-image:url(images/dark/arrow_2.gif);}
+body#theme_dark .block_testimonials_1 .testimonial, 
+body#theme_dark .block_testimonials_2 .testimonial{background:#303030; border-color:#383838;}
+body#theme_dark .block_testimonials_1 .testimonial .arrow, 
+body#theme_dark .block_testimonials_2 .testimonial .arrow{background-image:url(images/dark/bg_testimonials_1.png);}
+body#theme_dark.alternative_home #content{background-image:url(images/dark/logos.png);}
+body#theme_dark .block_logos_text{border-right-color:#4f4f4f;}
+body#theme_dark .block_logos_images img{background:url(images/dark/logos.jpg) no-repeat 0 0; width:0; height:0; padding:35px 0 0 695px;}
+body#theme_dark .block_general_pic_w_desc h3 a{color:#c7c7c7;}
+body#theme_dark .block_slider_nivo, body#theme_dark .block_slider_thumbnail {background-image:url(images/dark/bg_slider_cent.png);}
+body#theme_dark .ad-gallery .ad-thumbs li a img {border-color:#383838; background-color:#2e2e2e;}
+body#theme_dark .block_slider_accordation{background-image:url(images/dark/slider_accordation.png);}
+body#theme_dark .block_content_top p{color:#f6f6f6;}
+body#theme_dark .block_slider_side{background-image:url(images/dark/bg_slider_side.png);}
+body#theme_dark #slider_side_nav{background-color:#4a4a4a;}
+body#theme_dark .general_read_more_1{background-image:url(images/dark/bg_button_light_1.png); color:#c4c4c4; text-shadow:0 1px 0 #242424;}
+body#theme_dark .list_6 li {background-image:url(images/dark/arrow_blog_cat.png);border-bottom-color:#454545;}
+body#theme_dark .dropcap_3, body#theme_dark .first_letter {background-color:#292929; color:#c7c7c7;}
+body#theme_dark .block_pull_quote{border-left-color:#454545;}
+body#theme_dark .block_tabs .tabs a{background-color:#2e2e2e !important; border-color:#363636 !important; color:#828282; margin-left:0\9;} 
+body#theme_dark .block_tabs .tabs a.current{border-bottom-color:#2e2e2e !important; color:#c7c7c7;}
+body#theme_dark .block_tabs .tab_content {background-color:#2e2e2e; border-color:#363636;}
+body#theme_dark .icon img,
+body#theme_dark .block_clients .arrow_left,
+body#theme_dark .block_clients .arrow_right,
+body#theme_dark .pic img,
+body#theme_dark .block_social_2 a{opacity:0.3; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);}
+body#theme_dark .block_social_2 a:hover{opacity:0.6; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
+body#theme_dark #clients p{background:#333333;}
+body#theme_dark .post_link{background-image:url(images/dark/zoom_ico.png) !important;}
+body#theme_dark.portfolio_page #content,
+body#theme_dark.portfolio_gallery #content{background-image:url(images/dark/portfolio_blue.png);}
+body#theme_dark .block_portfolio_side .block_two_columns,
+body#theme_dark .block_portfolio_side .block_three_columns{background-image:url(images/dark/1x1_4f4f4f.gif);}
+body#theme_dark ul.list_portfolio_link li {border-bottom-color:#4f4f4f;}
+body#theme_dark ul.list_portfolio_link {border-top-color:#4f4f4f;}
+body#theme_dark .block_navi a, body#theme_dark .block_navi a strong, .portfolio_details strong {color:#c7c7c7;}
+body#theme_dark #main_menu li > ul > li > ul{left:183px;}
+body#theme_dark.thumbnail_bg {background-image:url(images/dark/thumbnail_bg_wh.png);}
+
+body#theme_dark .ad-gallery .ad-back{background-image:url(images/dark/arrow_prev.png);}
+body#theme_dark .ad-gallery .ad-back:hover{background-image:url(images/dark/arrow_prev_a.png);}
+body#theme_dark .ad-gallery .ad-forward{background-image:url(images/dark/arrow_next.png);}
+body#theme_dark .ad-gallery .ad-forward:hover{background-image:url(images/dark/arrow_next_a.png);}
+body#theme_dark .line_1.w_lnk a,
+body#theme_dark .portfolio_detail_gallery #portfolio_gallery img  {background-color:#333333;}
+body#theme_dark .service-ico-in{background-image:url(images/dark/round-service.png); width:59px; height:59px;}
+body#theme_dark .page_archives .latest_post li{background-image:url(images/dark/list_8.png);}
+body#theme_dark .portfolio_detail_gallery{border-color:#2a2a2a;}
+body#theme_dark .table_type_3 .key_features td{background-color:#2b2b2b;}
+body#theme_dark .table_type_3 td{border-left-color:#292929; background-color:#303030;}
+body#theme_dark .table_type_3 td.last{border-right-color:#292929;}
+body#theme_dark .table_type_3 .key_features td,
+body#theme_dark .table_type_3 .price td,
+body#theme_dark .table_type_3 .buttons td  {border-bottom-color:#292929;}
+body#theme_dark .table_type_3 .price td {border-top-color:#292929;}
+body#theme_dark .blockquote{background-image:url(images/dark/icon_quote.png);}
+body#theme_dark .blockquote p{border-left-color:#454545;}
+
+body#theme_dark .table_type_1 {background-image:url(images/dark/bg_table_header_1.png); border-color:#2f2f2f; background-color:#2e2e2e;}
+body#theme_dark .table_type_1 th,
+body#theme_dark .table_type_2 th{border-right-color:#2f2f2f; color:#bdbdbd; text-shadow:0 1px 0 #2a2a2a;}
+body#theme_dark .table_type_1 td{border-color:#383838; border-bottom-color:#2e2e2e;}
+body#theme_dark .table_type_1 .even td{background:#303030; border-bottom-color:#303030;}
+body#theme_dark .table_type_1 .last_row td{border-bottom:#2e2e2e;}
+body#theme_dark .table_type_2{border:none; border-collapse:collapse;}
+body#theme_dark .table_type_2 th {background-image:url(images/dark/bg_table_header_2.png);border:#2f2f2f 1px solid; background-color:#2f2f2f;}
+body#theme_dark .table_type_2 td{border:#3b3b3b 1px solid; border-left:#3b3b3b 1px solid;}
+
+body#theme_dark .block_accordion{border-color:#2f2f2f; background:#303030 url(images/dark/bg_accordion_act.png) repeat-x 0 0; webkit-border-radius:5px !important;}
+body#theme_dark .block_accordion .content{background:#303030;border-bottom-color:#2e2e2e;}
+body#theme_dark .block_accordion .button_outer{border-bottom-color:#2e2e2e; border-top:#454545 1px solid;background:#383838;}
+body#theme_dark .block_accordion .button_outer.current.first{background:none; border:none;}
+body#theme_dark .block_accordion .button_outer.current .button_inner{background-image:url(images/dark/arrow_accordion_act.png);}
+
+body#theme_dark .block_accordion .button_inner {color:#bdbdbd; text-shadow:0 1px 0 #2c2b2b;}
+body#theme_dark .icon_compass{background-image:url(images/dark/icon_compass.png);}
+body#theme_dark .block_accordion .button_inner{background-image:url(images/dark/arrow_accordion.gif);}
+body#theme_dark .toggle_block.type_1 a.toggler{background-color:#393939 !important; border:#323232 1px solid; border-top-color:#454545; }
+body#theme_dark .toggle_block.type_1 a.toggler{background-image:url(images/dark/icon_plus.png);}
+body#theme_dark .toggle_block.type_2 a.toggler{background-image:url(images/dark/icon_plus_r.png);}
+body#theme_dark .toggle_block.type_1 a.toggler.toggler-opened{background-image:url(images/dark/icon_minus.png);}
+body#theme_dark .toggle_block.type_2 a.toggler.toggler-opened{background-image:url(images/dark/icon_minus_r.png);}
+body#theme_dark .toggle_block.type_2 .toggle_content{background-color:#454545; margin:0 0 8px 27px; padding:8px 10px 8px 13px; border-radius:3px;behavior: url(layout/js/PIE.htc);}
+
+body#theme_dark .list_1 li,
+body#theme_dark .list_2 li,
+body#theme_dark .list_3 li,
+body#theme_dark .list_4 li{border-bottom-color:#454545;}
+body#theme_dark .list_1 li{background-image:url(images/dark/arrow_2.gif);}
+
+body#theme_dark .search_form input[type="text"]{border:#323232 1px solid; border-top:#454545 1px solid; border-radius:4px; color:#969696;behavior: url(layout/js/PIE.htc);}
+body#theme_dark .search_form input[type="text"],
+body#theme_dark .block_add_comment .comment_form .field,
+body#theme_dark .block_add_comment .comment_form .textarea,
+body#theme_dark .block_contact_form .field,
+body#theme_dark .block_contact_form .textarea{background:#e0e0e0;}
+
+
+body#theme_dark .search_form input[type="submit"]{background:#e0e0e0 url(../images/icon_search.png) no-repeat center center;border:#323232 1px solid;border-top:#454545 1px solid; border-radius:4px;behavior: url(layout/js/PIE.htc);}
+body#theme_dark .search_form {border-bottom-color:#4f4f4f;}
+body#theme_dark .block_blog_type_5 .title .date,
+body#theme_dark .block_blog_type_6 .title .date{background-image:url(images/dark/round-date.png);}
+body#theme_dark .block_blog_type_5 .title .date p,
+body#theme_dark .block_blog_type_5 .title .date p b,
+body#theme_dark .block_blog_type_6 .title .date p,
+body#theme_dark .block_blog_type_6 .title .date p b{color:#c7c7c7; text-shadow:none;}
+body#theme_dark .block_blog_type_5 .blog_info_by{background-image:url(images/dark/blog-info-by.png);}
+body#theme_dark .block_blog_type_5 .blog_info_in{background-image:url(images/dark/blog-info-in.png);}
+body#theme_dark .block_blog_type_5 .blog_info_tags{background-image:url(images/dark/blog-info-tags.png);}
+body#theme_dark .block_blog_type_5 .title .num_comments,
+body#theme_dark .block_blog_type_1 .title .num_comments,
+body#theme_dark .block_blog_type_2 .title .num_comments,
+body#theme_dark .block_blog_type_3 .title .num_comments,
+body#theme_dark .block_blog_type_4 .title .num_comments{background-image:url(images/dark/comm_ico.png);}
+body#theme_dark a.arr_d img{visibility:hidden;}
+body#theme_dark a.arr_d {background:url(images/dark/arrow_blog_cat.png) no-repeat 0 center;}
+body#theme_dark .block_blog_type_6 .blog_info_in,
+body#theme_dark .block_blog_type_6 .blog_info_tags,
+body#theme_dark .block_blog_type_6 .blog_info_comments,
+body#theme_dark .block_latest_tweets .tweet,
+body#theme_dark .block_blog_type_3 .blog_info li,
+body#theme_dark .block_blog_type_4 .blog_info li{border-color:#454545;}
+body#theme_dark .separated_border_right_24{border-right-color:#454545;}
+body#theme_dark .block_tags a{background:url(images/dark/bg_tag.png); border-color:#303030; }
+body#theme_dark .block_tags a span.tag{color:#a1a1a1; text-shadow:0 1px 0 #484242; border-color:#454545;}
+body#theme_dark .block_tags a span.num{border-color:#616161; color:#a4a4a4;}
+body#theme_dark .block_comments .comments .comment .v_line{background:#454545;}
+body#theme_dark .block_comments .comments .comment .comment{background-image:url(images/dark/line_comment_1.gif);}
+body#theme_dark #sB-Navi a.roundThumb,
+body#theme_dark .thumbPrev{background-image:url(images/dark/slider.png);}
+body#theme_dark #sB-Navi a.roundThumb:hover{background-image:url(images/dark/slider.png); background-position:-1px -49px;}
+body#theme_dark #footer .section_top {background-image:url(images/dark/line_footer_top.png);}
+body#theme_dark #footer .col_1 p,
+body#theme_dark #footer .col_2 p,
+body#theme_dark #footer .col_3 p  {color:#808080;}
+body#theme_dark .highlighted_1,
+body#theme_dark .highlighted_2,
+body#theme_dark .highlighted_3{background:none; color:inherit} 
+body#theme_dark .dropcap_1{background-color:#292929;}
+body#theme_dark .dropcap_1 p,
+body#theme_dark .dropcap_2 p{color:#c7c7c7;}
+body#theme_dark .line_1.w_lnk a{color:#969696;}
+body#theme_dark .service_item .title h3 {color:#8E8E8E;}
+body#theme_dark .ico-design{background-image:url(images/dark/ico-design.png);}
+body#theme_dark .ico-development{background-image:url(images/dark/ico-development.png);}
+body#theme_dark .ico-branding{background-image:url(images/dark/ico-branding.png);}
+body#theme_dark .ico-illustrations{background-image:url(images/dark/ico-illustrations.png);}
+body#theme_dark .ico-seo{background-image:url(images/dark/ico-seo.png);}
+body#theme_dark .ico-support{background-image:url(images/dark/ico-support.png);}
+
+body#theme_dark .gall_latest_works span.hover_1 {background:#2E2E2E !important; border-color: #383838 !important;}
+body#theme_dark .description a.arr_d {display:inline-block; vertical-align:-1px;}
+body#theme_dark .block_paginator a,
+body#theme_dark .block_paginator .pages {border-color:#4f4f4f;}
+body#theme_dark .pic_about{background-image:url(images/dark/pic_about_2.png);}
+body#theme_dark .list_6 li a:hover{background-image:url(../images/arrow_blog_cat_act.png);}
+/*___________________________________________________________________________________________________________ */
+/*____________________________________________/ PRELOADER \_____________________________________________ */
+body.preloader{
+	background:url(images/settings/preloader.png) repeat center center;
+	width:100%; height:100%;
+	min-width:950px; min-height:610px; position:relative;}
+.preloader_wrapper{
+	width:943px; height:610px; left:50%; top:50%; margin:-305px 0 0 -471px;
+	position:absolute;}
+
+.preloader_header{height:55px; background:url(images/settings/line.png) repeat-x 0 53px; color:#bab8b8; text-shadow:0 1px 0 #fbfcfb; font:italic 12px/31px Georgia, "Times New Roman", Times, serif; margin:0 0 27px 0;}
+.preloader_header img{vertical-align:top; margin:0 7px 0 0;background:url(images/settings/preloader_skin_active.png) no-repeat 0 1000px;}
+.preloader_skins{margin:0 -30px 0 -22px; overflow:hidden;   padding:0 0 19px 0}
+.preloader_skin{width:285px; height:475px;  margin:0 22px; float:left;background:url(images/settings/preloader_skin.png) no-repeat 0 0;}
+.preloader_skin:hover{background-image:url(images/settings/preloader_skin_active.png);}
+a.main_skin {display:block; text-align:center; text-decoration:none; margin:0 0 17px 0;}
+.main_skin span{display:block; width:79px; text-align:center; padding:6px 0; text-transform:uppercase; font:700 9px/19px Arial;}
+.preloader_skin p{color:#919191;font:9px/25px Arial; text-transform:uppercase;}
+a.link_bg{padding:0 10px; height:21px; font:9px/23px Arial; border:#ffffff 1px solid; background:#f7f7f7; color:#737373; display:inline-block; //zoom:1; //display:inline; margin:0 0 0 4px; border-radius:3px;  behavior: url(layout/js/PIE.htc);}
+a.link_bg:hover, a.link_bg.active{background-color:#128fc9; border-color:#e3f4fc; color:#fff; text-decoration:none;}
+
+.preloader_footer{color:#bab8b8;font:9px/23px Arial; overflow:hidden;background:url(images/settings/line.png) repeat-x 0 top; padding:17px 0 0 0;}
+.creator a{color:#0e8dc8;font:9px/23px Arial;}
+.creator {float:left;}
+.browser_compatible {float:right;}
+.browser_compatible img{vertical-align:-3px;}

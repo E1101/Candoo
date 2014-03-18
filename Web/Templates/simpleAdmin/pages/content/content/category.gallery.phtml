@@ -1,0 +1,33 @@
+<?php	
+$this->headTitle($this->category->name);
+$this->layout()->pageTitle = $this->category->name;
+
+$this->layout()->breadcrumb = $this->widget('content','breadcrumb',array('category_id'=>$this->category->category_id));
+?>
+			
+<div id="portfolio_4_col">
+<?php foreach ($this->posts as $index => $post) : ?>
+<div class="portfolio_item_4_col description">
+	<a rel="portfolio" class="frame portfolio-modal-anchor" href="<?php echo $post->image;?>">						
+		<span class="portfolio_loading">
+			<span class="vignette_portfolio galleria">	
+				<span></span>
+					<?php echo $this->htmlImg($post->image,array('mode'=>'crop','size'=>'191x132'),array('class="bw wp-post-image"'));?>
+			</span>
+		</span>
+	</a>
+	<span class="portfolio_shadow"></span>
+	<span class="port_4_header">
+		<span class="port_4_title"><?php echo $post->title; ?></span>
+		<span class="port_4_description"><?php echo $post->description; ?></span>
+	</span>
+</div><!-- /portfolio_item_4_col -->				
+<?php endforeach; ?>
+				
+<br class="clear" /> 
+<div class="paginator">
+  <?php echo $this->paginator()->slide($this->paginator, $this->paginatorOptions); ?>
+</div>
+<br class="clear" /> 
+			
+</div><!-- /portfolio_4_col -->	

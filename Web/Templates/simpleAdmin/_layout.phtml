@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" dir="ltr"> 
+ 
+<head> 
+<?php 
+echo $this ->headTitle();
+echo $this ->headMeta();
+echo $this->headScript(); 
+    	 
+?>
+   
+ 
+</head> 
+ 
+<body>
+<h1>Admin panel</h1>
+
+<b><?php //echo $this->test(); ?></b>
+<br/>
+
+<div style="width:25%;height:80px;float:left;border: 1px solid;">
+	<?php echo $this->layout()->left; ?>
+	<?php $this->headScript()->captureStart(); ?>
+	<script> function test() {
+	}
+	</script>
+	<?php $this->headScript()->captureEnd(); ?>
+</div>
+<div style="width:48%;float:left;border: 1px solid;margin-left: auto;margin-right: auto;">
+	<?php echo $this->layout()->content; ?>
+</div>
+<div style="width:25%;height:80px;float:right;border: 1px solid;">
+	<?php echo $this->layout()->right; ?>
+</div>
+</body> 
+ 
+</html> 

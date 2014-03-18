@@ -1,0 +1,39 @@
+<?php
+$this->headTitle($this->category->name);
+$this->layout()->pageTitle = $this->category->name;
+
+$this->layout()->breadcrumb = $this->widget('news','breadcrumb',array('category_id'=>$this->category->category_id));
+?>
+
+<?php foreach ($this->articles as $index => $article) : ?>
+<div class="post"> 
+	<div class="entry">							
+		<a href="<?php echo $this->url($article->getProperties(), 'news_article_details'); ?>">
+			<?php if ($article->image_large) : ?>
+			<span class="blog_frame">
+				<?php echo $this->htmlImg($article->image_large,array('mode'=>'crop','size'=>'275x231'));?>
+			</span>
+			<?php endif; ?>
+		</a> 
+		<div> 
+			<h2 class="blogroll_header"><a class="blog_title" href="<?php echo $this->url($article->getProperties(), 'news_article_details'); ?>"><?php echo $article->title; ?></a></h2>	
+			<span class="author_time_stamp"><?php echo $article->author; ?> - <?php echo date($this->globalConfig('web')->datetime->format->datetime, strtotime($article->activate_date)); ?> </span> 																	
+				<p><?php echo $article->description; ?></p> 
+				<a class="blog_button" href="<?php echo $this->url($article->getProperties(), 'news_article_details'); ?>">Read More</a> 								
+				<br class="clear" /> 								
+		</div>  
+	</div><!-- /entry --> 						
+</div><!-- /post --> 
+
+<br class="clear">
+<?php endforeach; ?>
+
+<div class="paginator">
+  <?php echo $this->paginator()->slide($this->paginator, $this->paginatorOptions); ?>
+</div>
+
+
+	
+	
+
+

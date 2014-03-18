@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hook>
+	<name>BadWordsCensor</name>
+	<module></module>
+	<description><![CDATA[Replace bad words with *** characters]]></description>
+	<thumbnail></thumbnail>
+	<author>Core Team</author>
+	<email>mail@email.com</email>
+	<version>2.0.0</version>
+	<license>free</license>
+</hook>

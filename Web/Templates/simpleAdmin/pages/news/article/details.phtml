@@ -1,0 +1,27 @@
+<?php if ($this->article) : ?>
+<?php
+$this->headTitle($this->article->title);
+$this->layout()->pageTitle = $this->article->title;
+
+$this->layout()->breadcrumb = $this->widget('news','breadcrumb',array('category_id'=>$this->category->category_id));
+?>
+
+<div class="entry">
+	
+	<?php if ($this->article->image_large) : ?>
+	<a href="<?php echo $this->article->image_large; ?>" class="colourbox-image cboxElement"><?php echo $this->htmlImg($this->article->image_large,array('mode'=>'crop','size'=>'630x276'));?></a>
+	<?php endif; ?>
+	
+	<h2><?php echo $this->article->title; ?></h2>
+	
+	<?php if ($this->article->sub_title) : ?>
+	<h3><?php echo $this->article->sub_title; ?></h3>
+	<?php endif; ?>
+	
+	<cite><?php echo $this->article->author; ?> - <?php echo date($this->globalConfig('web')->datetime->format->datetime, strtotime($this->article->activate_date)); ?></cite>
+
+	<div class="description"><?php echo $this->article->description; ?></div>
+	
+	<div class="content"><?php echo $this->article->content; ?></div>
+</div>
+<?php endif; ?>

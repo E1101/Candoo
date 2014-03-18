@@ -1,0 +1,19 @@
+<?php 
+$this->headTitle( $this->translate('Error') );
+?>
+
+<h2><?php echo $this->translate("Sorry, there's error");?></h2>
+
+<div class="notification error"> 
+	<div class="text">
+		<p> <?php echo $this->message; ?> </p>
+	</div> 
+</div>
+
+<p><input class="button" type="submit" value="<?php echo $this->translate('Back'); ?>" onclick="javascript: history.go(-1);" /></p>
+
+<?php if ($this->debug) : ?>
+<div >
+	<?php Zend_Debug::dump($this->error->exception); ?>
+</div>
+<?php endif; ?>

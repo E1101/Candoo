@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<!-- this is human readable name of module -->
+	<name>Multisite</name>
+	<description><![CDATA[Multisite and domain controller]]></description>
+	<thumbnail></thumbnail>
+	<author>Core Team</author>
+	<email></email>
+	<version>1.0.0</version>
+	<license>free</license>
+	
+	<params>
+		<param type="select" name="frontend" label="Frontend" description="Application Frontend template" scope="Templates_Lib_Template::getTemplates">
+			<!-- default value -->
+			<value>websplash</value>
+		</param>				
+	</params>
+
+	<params>
+		<param type="select" name="frontend" label="Frontend" description="Application Frontend template" scope="Templates_Lib_Template::getTemplates">
+			<!-- default value -->
+			<value>hsalpsbew</value>
+		</param>				
+	</params>
+		
+</module>
