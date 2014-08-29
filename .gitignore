@@ -8,3 +8,5 @@
 build/
 nbproject
 tmp/
+App/Lib/Zend/*
+!App/Lib/Zend/readme.txt
