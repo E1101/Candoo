@@ -1,0 +1,43 @@
+<p class="field">
+  
+  <?php 
+  /**
+   * Print out <lable />
+   */
+  ?>
+  
+          <?php echo $this->formLabel($this->element->getName(),
+                               $this->element->getLabel()) ?>
+          
+  
+  <?php 
+  /**
+   *                                               $this->element->helper
+   * Print out form_element tag using Helpers exp. $this->formText();
+   */
+  ?>        
+  <?php echo $this->formSelect($this->element->getName(),$this->element->getValue(),
+                               $this->element->getAttribs(),
+                               $this->element->getMultiOptions()  
+  ); ?>
+
+  
+  <?php 
+  /**
+   * Display Errors if trigred
+   */
+  ?>
+  <?php if ($this->element->getMessages()){ ?>      
+  <?php echo $this->formErrors($this->element->getMessages()) ?>
+  <?php }?>
+  
+  <?php 
+  /**
+   * Dispaly form hint if availible
+   */
+  ?>
+  <?php if ($this->element->getDescription()) {?>
+  <span class="small" style="display: block;"><?php echo $this->element->getDescription() ?></span>
+  <?php }?>
+  
+</p>

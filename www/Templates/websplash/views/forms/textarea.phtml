@@ -1,0 +1,26 @@
+	  <?php // $this->element->setAttrib('cols',40);?>
+      <p class="field">
+      
+		  <?php if ($this->element->isRequired()) { ?>
+  			<small>*</small>
+ 			<?php } else { ?>
+  			<small>&nbsp;&nbsp;</small>
+ 			<?php  } ?>
+ 		  
+          <?php echo $this->formLabel($this->element->getName(),$this->element->getLabel()) ?>
+          
+          <span class="wpcf7-form-control-wrap">                         
+          <?php echo $this->{$this->element->helper}(
+              $this->element->getName(),
+              $this->element->getValue(),
+              $this->element->getAttribs()
+          ); ?>
+          </span>
+          
+          <?php if ($this->element->getMessages()){ 
+               echo $this->formErrors($this->element->getMessages());
+          } 
+          ?>
+          <div class="hint"><?php //echo $this->element->getDescription() ?></div>
+
+      </p>

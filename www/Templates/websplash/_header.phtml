@@ -1,0 +1,38 @@
+	<!-- HEADER BEGIN -->
+	<div id="header">
+		<div class="inner">
+			<div class="section_top">
+				<div class="block_top_text">
+					<p>WebSplash - number one in business</p>
+				</div>
+				<div class="block_search">
+					<div id="search_show" class="button">Search</div>
+					<div id="search_form_block" class="form_wrapper">
+						<div class="form">
+							<form action="#">
+								<div class="field">
+									<input type="text" class="w_def_text" title="Site search" />
+								</div>
+								<input type="submit" class="button" value="Search" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="block_top_lnks">
+					<ul>
+						<li><a href="#sign_popup" name="sign_pop" rel="prettyPhoto[gallery0]">Sign in</a></li>
+						<li><a href="#reg_popup" name="reg_pop" rel="prettyPhoto[gallery00]">Registration</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section_bottom">
+				<div id="title_top">
+					<p><a href="home.html"><img src="<?php echo $this->layout()->getUrl();?>/layout/images/spacer.gif" alt="WebSplash" title="WebSplash" /></a></p>
+				</div>
+				<div id="main_menu">
+					<?php echo $this->navigation(Candoo_App_Resource::get('sitemap'))->menu(); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- HEADER END --> 

@@ -1,0 +1,33 @@
+<h1>moduleTest : template side</h1>
+
+<p><?php echo $this->date('2012-02-21 12:07:04'); ?></p>
+<p><b>Current Language :</b> <?php echo $this->translate('Ask a question');?> </p>
+<hr/>
+<?php echo 'from:'. __FILE__; ?>
+
+	<?php
+	echo $this->imagedit($this->layout()->getUrl().'/images/929x295/pic_929x295_5.jpg',array('title'=>'this is a image'))
+	->rotate(20)
+	->setWidth(100,true)
+	->setHeight(100,true)
+	->setDefaultFormat('png')
+	;
+	?>
+
+	<?php
+	echo $this->form;
+	?>
+	
+    <?php
+    /* echo $this->ajaxLink("Show me something",
+               $this->basePath()."/srv/moduleTest/",
+               array('update' => '#ajaxload')); */
+    ?>
+    
+    <?php
+    echo $this->ajaxLink("Show me something",
+               $this->url('home'),
+               array('update' => '#ajaxload'));
+    ?>
+    
+    <div id="ajaxload"></div>

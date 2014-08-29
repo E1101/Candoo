@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<!-- this is human readable name of module -->
+	<name>cFiles</name>
+	<description><![CDATA[File manager and image manipulation]]></description>
+	<thumbnail></thumbnail>
+	<author>Core Team</author>
+	<email></email>
+	<version>1.0.0</version>
+	<license>free</license>
+	
+	<!-- changable config of module -->
+	<params>
+		<fieldset name="imagedit">
+			<description>Imagedit manipulation helper</description>
+			<param type="select" name="srcEngine" label="Using src engine" description="Wich method will use to generate src image">
+				<option name="Api address" value="api" />
+				<option name="Embeded Data" value="data" />
+			</param>
+		</fieldset>
+	</params>
+	
+</module>

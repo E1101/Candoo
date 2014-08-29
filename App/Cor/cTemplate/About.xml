@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module>
+	<!-- this is human readable name of module -->
+	<name>cTemplate</name>
+	<description><![CDATA[Template system]]></description>
+	<thumbnail></thumbnail>
+	<author>Core Team</author>
+	<email></email>
+	<version>1.0.0</version>
+	<license>free</license>
+	
+	<!-- changable config of module -->
+	<params>
+		<!-- dar hengaame generate kardan e form list ro az maghaadir e bargardaande shode az scope migirad -->
+		<param type="select" name="frontend" label="Frontend" description="Application Frontend template" scope="cTemplate_Lib_Template::getcTemplate">
+			<value>websplash</value>
+		</param>
+		
+		<param type="select" name="backend" label="Backend" description="Application Backend template" scope="cTemplate_Lib_Template::getcTemplate">
+			<value>simpleAdmin</value>
+		</param>			
+	</params>
+	
+</module>

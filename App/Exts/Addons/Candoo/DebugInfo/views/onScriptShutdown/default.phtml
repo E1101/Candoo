@@ -1,0 +1,16 @@
+<div style="clear:both;font-family:tahoma;width:100%;line-height:40px;font-size:12px;color:#fff;background-color:blue">
+	<?php foreach ($this->deltas as $d) {
+    	foreach ($d as $key=>$val) {
+        	echo '<b>'.$key.':</b> '.$val.'<br/>';
+    	}
+	}
+	?>
+</div>
+<?php if ($this->profiles) { ?>
+<div style="clear:both;font-family:tahoma;width:100%;line-height:40px;font-size:12px;color:#fff;background-color:gray">
+	<?php foreach ($this->profiles as $p) {
+        	echo '<b>'.$p->getQuery().':</b> '.$p->getElapsedSecs().'<br/>';
+	}
+	?>
+</div>
+<?php } ?>

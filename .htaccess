@@ -28,7 +28,10 @@ DirectoryIndex index.php
 ### Rewrite rules for Zend Framework
 <IfModule mod_rewrite.c>
 	SetEnv HTTP_MOD_REWRITE On
-	RewriteEngine on
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv)$ index.php
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} -s [OR]
+	RewriteCond %{REQUEST_FILENAME} -l [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^.*$ - [NC,L]
+	RewriteRule ^.*$ index.php [NC,L]
 </IfModule>

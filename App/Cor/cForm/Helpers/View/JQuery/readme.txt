@@ -1,0 +1,1 @@
+You can use this plugins only if jQuery was enabled by ZendX_JQuery::enableView($view);

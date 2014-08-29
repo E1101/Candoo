@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon>
+	<name>Html</name>
+	<title>HTML content</title>
+	<module>core</module>
+	<description>Show HTML content</description>
+	<thumbnail></thumbnail>
+	<author></author>
+	<version>1.0.0</version>
+	<license>free</license>
+	<params>
+		<param type="editor" name="content" label="Html Content" description="Enter your html content to display">
+			<value><![CDATA[<p>this is <b>default</b> html content</p>]]></value>
+		</param>
+		
+		<param type="file" name="file" label="Browse a file" >
+			<value><![CDATA[/opt/lamp/htdocs/candoo/file.html]]></value>
+		</param>
+	</params>
+</addon>

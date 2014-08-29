@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon>
+	<name>Locali Pish Mo`ed Initializer</name>
+	<title>Locali Pish Mo`ed Initializer</title>
+	<module>cLocali</module>
+	<description>Locali initializer raa be ebtedaaie barnaame montaghel mikonad</description>
+	<thumbnail></thumbnail>
+	<author></author>
+	<version>1.0.0</version>
+	<license>free</license>
+</addon>

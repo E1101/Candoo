@@ -1,3 +1,0 @@
-[submodule "Application/Lib/Zend"]
-	path = Application/Lib/Zend
-	url = git@github.com:zendframework/zf1.git

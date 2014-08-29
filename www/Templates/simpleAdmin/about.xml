@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<name>Enterpenuer</name>
+	<description>Enterpenuer FrontEnd</description>
+	<author>Core Team</author>
+	<version>1.0</version>
+	<license>free</license>
+	<skins>
+		<skin name="default">
+			<color>#F1F1F1</color>
+			<description>Default skin</description>
+		</skin>
+	</skins>
+	<install>
+	</install>
+	
+	<layouts>
+	
+		<layout default="default">
+			<file>_layout</file>
+		</layout>
+		
+	</layouts>
+	
+</template>

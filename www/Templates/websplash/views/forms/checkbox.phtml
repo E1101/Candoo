@@ -1,0 +1,29 @@
+<p class="field" style="color:#484848;">
+
+<?php 
+  /**
+   * Print out <lable />
+   */
+  ?>
+  <?php echo $this->element->getLabel(); ?>
+   
+  <?php 
+  /**
+   *                                               $this->element->helper
+   * Print out form_element tag using Helpers exp. $this->formText();
+   */
+  ?>        
+  <?php echo $this->formCheckbox($this->element->getName(),$this->element->getValue(),$this->element->getAttribs()); ?>
+  
+  
+  
+  <?php 
+  /**
+   * Display Errors if trigred
+   */
+  ?>
+  <?php if ($this->element->getMessages()){ ?>      
+  <?php echo $this->formErrors($this->element->getMessages()) ?>
+  <?php }?>
+  
+</p>

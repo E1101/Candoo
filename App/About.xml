@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<site>
+	<!-- parameter haaye site az ghabil e web title va ... injaa gharaar migirand -->
+	
+	<name>Name of site</name>
+	<description><![CDATA[Description about site]]></description>
+	<author>Payam naderi</author>
+	<copyright>2012 Payam naderi, programmer and web developer</copyright>
+	<email>naderi.payam@gmail.com</email>
+	<version>1.0.0</version>
+	<license>free</license>
+	
+	<!-- enviorment="enabled" enable this params to save in specific enviorment section -->
+	<params enviorment="enabled" >
+		<param type="select" name="frontend" label="Frontend" description="Application Frontend template" scope="cTemplate_Lib_Template::getcTemplate">
+			<!-- default value -->
+			<value>websplash</value>
+		</param>				
+	</params>
+	
+	<targets>
+		<target name="candoo">
+			
+			<event name="onAppRun">
+				<description>trigger when Candoo_App class constructed and after ::setup method</description>
+				<!-- argument that this method can accept (arg1,arg2) -->
+				<args>
+					<arg name="">
+						<description></description>
+						<!-- int, string, array, mixed, ... -->
+						<type></type>
+					</arg>
+				</args>
+			</event>
+			<event name="onScriptShutdown">
+				<description>triggered on callback of register_script_shutdown php function</description>
+			</event>
+			
+			<event name="beforeCoreInitalize">
+				<description>dorost ghabl az inital shodan Core_Init</description>
+			</event>
+			<event name="afterCoreInitalize">
+				<description>dorost ba`d az inital shodan Core_Init</description>
+			</event>
+			
+			<event name="beforeModulesInitalize">
+				<description>dorost ghabl az inital shodan Module haa</description>
+			</event>
+			<event name="afterModulesInitalize">
+				<description>dorost ba`d az inital shodan Module haa</description>
+			</event>
+			
+		</target>
+	</targets>
+		
+</site>
